@@ -9,13 +9,18 @@
 
 #import <GameKit/GameKit.h>
 #import "cocos2d.h"
+#import "SimpleAudioEngine.h"
 
 
 @interface HelloWorldLayer : CCLayerColor
 {
   CCSprite *player;
+  CGSize winSize;
+  NSMutableArray * _monsters;
+  NSMutableArray * _projectiles;
 }
 
-+(CCScene *) scene;
++ (CCScene *) scene;
+- (void) addMonster;
 
 @end

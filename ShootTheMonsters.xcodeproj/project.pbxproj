@@ -1207,6 +1207,7 @@
 				75E3D81F16DEADAC004959CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
