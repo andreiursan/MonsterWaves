@@ -1,5 +1,5 @@
 //
-//  HelloWorldLayer.h
+//  GameLayer.h
 //  ShootTheMonsters
 //
 //  Created by Andrei Ursan on 2/27/13.
@@ -12,7 +12,7 @@
 #import "SimpleAudioEngine.h"
 
 
-@interface HelloWorldLayer : CCLayerColor
+@interface GameLayer : CCLayerColor
 {
   CCSprite *player;
   CGSize winSize;

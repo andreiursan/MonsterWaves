@@ -1,5 +1,5 @@
 //
-//  HelloWorldLayer.m
+//  GameLayer.m
 //  ShootTheMonsters
 //
 //  Created by Andrei Ursan on 2/27/13.
@@ -7,20 +7,20 @@
 //
 
 
-#import "HelloWorldLayer.h"
+#import "GameLayer.h"
 #import "AppDelegate.h"
 #import "GameOverLayer.h"
 
-#pragma mark - HelloWorldLayer
+#pragma mark - GameLayer
 
 
-@implementation HelloWorldLayer
+@implementation GameLayer
 
 
 +(CCScene *) scene
 {
 	CCScene *scene = [CCScene node];
-	HelloWorldLayer *layer = [HelloWorldLayer node];
+	GameLayer *layer = [GameLayer node];
 	[scene addChild: layer];
 	
 	return scene;

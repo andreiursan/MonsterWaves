@@ -138,7 +138,7 @@
 		75E3D80C16DEADAC004959CC /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = 75E3D80B16DEADAC004959CC /* vec4.c */; };
 		75E3D81116DEADAC004959CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E3D81016DEADAC004959CC /* main.m */; };
 		75E3D81416DEADAC004959CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E3D81316DEADAC004959CC /* AppDelegate.m */; };
-		75E3D81716DEADAC004959CC /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E3D81616DEADAC004959CC /* HelloWorldLayer.m */; };
+		75E3D81716DEADAC004959CC /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E3D81616DEADAC004959CC /* GameLayer.m */; };
 		75E3D81A16DEADAC004959CC /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E3D81916DEADAC004959CC /* IntroLayer.m */; };
 		75E3D82A16DEB19F004959CC /* monster-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E3D82116DEB19F004959CC /* monster-hd.png */; };
 		75E3D82B16DEB19F004959CC /* monster.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E3D82216DEB19F004959CC /* monster.png */; };
@@ -427,8 +427,8 @@
 		75E3D81016DEADAC004959CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75E3D81216DEADAC004959CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		75E3D81316DEADAC004959CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		75E3D81516DEADAC004959CC /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		75E3D81616DEADAC004959CC /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
+		75E3D81516DEADAC004959CC /* GameLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
+		75E3D81616DEADAC004959CC /* GameLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 		75E3D81816DEADAC004959CC /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		75E3D81916DEADAC004959CC /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
 		75E3D82116DEB19F004959CC /* monster-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monster-hd.png"; sourceTree = "<group>"; };
@@ -499,8 +499,8 @@
 			children = (
 				75E3D81216DEADAC004959CC /* AppDelegate.h */,
 				75E3D81316DEADAC004959CC /* AppDelegate.m */,
-				75E3D81516DEADAC004959CC /* HelloWorldLayer.h */,
-				75E3D81616DEADAC004959CC /* HelloWorldLayer.m */,
+				75E3D81516DEADAC004959CC /* GameLayer.h */,
+				75E3D81616DEADAC004959CC /* GameLayer.m */,
 				75E3D81816DEADAC004959CC /* IntroLayer.h */,
 				75E3D81916DEADAC004959CC /* IntroLayer.m */,
 				756E0C4A16EDADEC00B73F88 /* GameOverLayer.h */,
@@ -1105,7 +1105,7 @@
 				75E3D80C16DEADAC004959CC /* vec4.c in Sources */,
 				75E3D81116DEADAC004959CC /* main.m in Sources */,
 				75E3D81416DEADAC004959CC /* AppDelegate.m in Sources */,
-				75E3D81716DEADAC004959CC /* HelloWorldLayer.m in Sources */,
+				75E3D81716DEADAC004959CC /* GameLayer.m in Sources */,
 				75E3D81A16DEADAC004959CC /* IntroLayer.m in Sources */,
 				756E0C4C16EDADEC00B73F88 /* GameOverLayer.m in Sources */,
 			);
