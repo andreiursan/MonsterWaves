@@ -9,6 +9,7 @@
 
 #import "HelloWorldLayer.h"
 #import "AppDelegate.h"
+#import "GameOverLayer.h"
 
 #pragma mark - HelloWorldLayer
 
@@ -68,6 +69,8 @@
   CCMoveTo *moveAction = [CCMoveTo actionWithDuration:actualDuration position:ccp(-monster.contentSize.width/2, actualY)];
   CCCallBlockN *moveActionDone = [CCCallBlockN actionWithBlock:^(CCNode *node){
     [_monsters removeObject:node];
+    CCScene *gameOverScene = [GameOverLayer sceneWithWon:NO];
+    [[CCDirector sharedDirector] replaceScene:gameOverScene];
   }];
   
   [monster runAction:[CCSequence actions:moveAction, moveActionDone, nil]];
@@ -128,6 +131,11 @@
     for (CCSprite *monster in monstersToDelete) {
       [_monsters removeObject:monster];
       [self removeChild:monster cleanup:YES];
+      _monstersDestroyed++;
+      if (_monstersDestroyed >= 30){
+        CCScene *gameOverScene = [GameOverLayer sceneWithWon:YES];
+        [[CCDirector sharedDirector] replaceScene:gameOverScene];
+      }
     }
     
     if (monstersToDelete.count > 0) {

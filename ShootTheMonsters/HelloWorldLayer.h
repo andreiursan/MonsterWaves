@@ -18,6 +18,7 @@
   CGSize winSize;
   NSMutableArray * _monsters;
   NSMutableArray * _projectiles;
+  int _monstersDestroyed;
 }
 
 + (CCScene *) scene;
