@@ -141,22 +141,14 @@
     if (monstersToDelete.count > 0) {
       [projectilesToDelete addObject:projectile];
     }
-    [monstersToDelete release];
   }
   
   for (CCSprite *projectile in projectilesToDelete) {
     [_projectiles removeObject:projectile];
     [self removeChild:projectile cleanup:YES];
   }
-  [projectilesToDelete release];
 }
 
-- (void) dealloc {
-  _monsters = nil;
-  _projectiles = nil;
-  [_monsters release];
-  [_projectiles release];
-	[super dealloc];
-}
+
 
 @end
