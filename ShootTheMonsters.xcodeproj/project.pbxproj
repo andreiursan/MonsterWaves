@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		756E0C4C16EDADEC00B73F88 /* GameOverLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E0C4B16EDADEC00B73F88 /* GameOverLayer.m */; };
+		756E0C4F16EFE21E00B73F88 /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E0C4E16EFE21E00B73F88 /* Bullet.m */; };
 		75E3D67316DEADA9004959CC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67216DEADA9004959CC /* QuartzCore.framework */; };
 		75E3D67516DEADA9004959CC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67416DEADA9004959CC /* OpenGLES.framework */; };
 		75E3D67716DEADA9004959CC /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67616DEADA9004959CC /* OpenAL.framework */; };
@@ -153,6 +154,9 @@
 /* Begin PBXFileReference section */
 		756E0C4A16EDADEC00B73F88 /* GameOverLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverLayer.h; sourceTree = "<group>"; };
 		756E0C4B16EDADEC00B73F88 /* GameOverLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverLayer.m; sourceTree = "<group>"; };
+		756E0C4D16EFE21E00B73F88 /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
+		756E0C4E16EFE21E00B73F88 /* Bullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bullet.m; sourceTree = "<group>"; };
+		756E0CA316F216A600B73F88 /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		75E3D66F16DEADA9004959CC /* ShootTheMonsters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootTheMonsters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E3D67216DEADA9004959CC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		75E3D67416DEADA9004959CC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -505,6 +509,9 @@
 				75E3D81916DEADAC004959CC /* IntroLayer.m */,
 				756E0C4A16EDADEC00B73F88 /* GameOverLayer.h */,
 				756E0C4B16EDADEC00B73F88 /* GameOverLayer.m */,
+				756E0C4D16EFE21E00B73F88 /* Bullet.h */,
+				756E0CA316F216A600B73F88 /* GameConfig.h */,
+				756E0C4E16EFE21E00B73F88 /* Bullet.m */,
 				75E3D68516DEADA9004959CC /* Resources */,
 				75E3D69D16DEADA9004959CC /* libs */,
 				75E3D80E16DEADAC004959CC /* Supporting Files */,
@@ -1108,6 +1115,7 @@
 				75E3D81716DEADAC004959CC /* GameLayer.m in Sources */,
 				75E3D81A16DEADAC004959CC /* IntroLayer.m in Sources */,
 				756E0C4C16EDADEC00B73F88 /* GameOverLayer.m in Sources */,
+				756E0C4F16EFE21E00B73F88 /* Bullet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
