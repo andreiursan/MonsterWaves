@@ -76,6 +76,7 @@
     CCScene *gameOverScene = [GameOverLayer sceneWithWon:NO];
     [[CCDirector sharedDirector] replaceScene:gameOverScene];
   }];
+  NSLog(@"monsters %d", _monsters.count);
   
   [monster runAction:[CCSequence actions:moveAction, moveActionDone, nil]];
 }
@@ -85,9 +86,11 @@
     [projectile updatePostion:dt];
   }
   NSMutableArray *projectilesToDelete = [[NSMutableArray alloc] init];
+
   for (Bullet *projectile in _projectiles) {
-    
+  
     NSMutableArray *monstersToDelete = [[NSMutableArray alloc] init];
+
     for (CCSprite *monster in _monsters) {
       if (CGRectIntersectsRect(projectile.sprite.boundingBox, monster.boundingBox)) {
         [monstersToDelete addObject:monster];
@@ -104,13 +107,15 @@
       }
     }
     
-    if (monstersToDelete.count > 0) {
+    if (monstersToDelete.count > 0 || winSize.height < projectile.sprite.position.y || winSize.width < projectile.sprite.position.x ) {
       [projectilesToDelete addObject:projectile];
     }
+    
   }
   
   for (Bullet *projectile in projectilesToDelete) {
     [projectile remove];
+    NSLog(@"projectiles %d", _projectiles.count);
     [_projectiles removeObject:projectile];
   }
 }
