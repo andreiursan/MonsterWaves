@@ -10,9 +10,10 @@
 #import <GameKit/GameKit.h>
 #import "cocos2d.h"
 #import "SimpleAudioEngine.h"
-#import "Bullet.h"
 #import "AppDelegate.h"
 #import "GameOverLayer.h"
+#import "Bullet.h"
+#import "Enemy.h"
 
 @interface GameLayer : CCLayerColor
 {

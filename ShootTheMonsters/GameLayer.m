@@ -54,52 +54,34 @@
 }
 
 - (void)addMonster{
-  // Add Monster
-  CCSprite *monster = [CCSprite spriteWithFile:@"monster.png"];
-  int minY = monster.contentSize.height / 2;
-  int maxY = winSize.height - minY;
-  int actualY = (arc4random() % (maxY-minY)) + minY;
-  monster.position = ccp(winSize.width, actualY);
-  [self addChild:monster];
-  
-  // Determine Monster's speed
-  int minDuration = 2.0;
-  int maxDuration = 4.0;
-  int actualDuration = (arc4random() % (maxDuration - minDuration)) + minDuration;
-  
-  monster.tag = 1;
-  [_monsters addObject: monster];
-  
-  CCMoveTo *moveAction = [CCMoveTo actionWithDuration:actualDuration position:ccp(-monster.contentSize.width/2, actualY)];
-  CCCallBlockN *moveActionDone = [CCCallBlockN actionWithBlock:^(CCNode *node){
-    [_monsters removeObject:node];
-    CCScene *gameOverScene = [GameOverLayer sceneWithWon:NO];
-    [[CCDirector sharedDirector] replaceScene:gameOverScene];
-  }];
-  NSLog(@"monsters %d", _monsters.count);
-  
-  [monster runAction:[CCSequence actions:moveAction, moveActionDone, nil]];
+  Enemy *enemy = [Enemy createOnLayer:self];
+  [_monsters addObject:enemy];
 }
 
 - (void)update:(ccTime)dt {
   for (Bullet *projectile in _projectiles) {
     [projectile updatePostion:dt];
   }
+  for (Enemy *enemy in _monsters) {
+    [enemy updatePosition:dt];
+  }
+  
   NSMutableArray *projectilesToDelete = [[NSMutableArray alloc] init];
 
   for (Bullet *projectile in _projectiles) {
   
     NSMutableArray *monstersToDelete = [[NSMutableArray alloc] init];
 
-    for (CCSprite *monster in _monsters) {
-      if (CGRectIntersectsRect(projectile.sprite.boundingBox, monster.boundingBox)) {
+    for (Enemy *monster in _monsters) {
+      if (CGRectIntersectsRect(projectile.sprite.boundingBox,
+                               monster.sprite.boundingBox)) {
         [monstersToDelete addObject:monster];
       }
     }
     
-    for (CCSprite *monster in monstersToDelete) {
+    for (Enemy *monster in monstersToDelete) {
+      [monster remove];
       [_monsters removeObject:monster];
-      [self removeChild:monster cleanup:YES];
       _monstersDestroyed++;
       if (_monstersDestroyed >= 30){
         CCScene *gameOverScene = [GameOverLayer sceneWithWon:YES];

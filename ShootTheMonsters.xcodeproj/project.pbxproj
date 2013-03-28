@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75596DA8170117BD000B09FD /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75596DA7170117BD000B09FD /* Enemy.m */; };
 		756E0C4C16EDADEC00B73F88 /* GameOverLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E0C4B16EDADEC00B73F88 /* GameOverLayer.m */; };
 		756E0C4F16EFE21E00B73F88 /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E0C4E16EFE21E00B73F88 /* Bullet.m */; };
 		75E3D67316DEADA9004959CC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67216DEADA9004959CC /* QuartzCore.framework */; };
@@ -152,6 +153,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75596DA6170117BD000B09FD /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
+		75596DA7170117BD000B09FD /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
 		756E0C4A16EDADEC00B73F88 /* GameOverLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverLayer.h; sourceTree = "<group>"; };
 		756E0C4B16EDADEC00B73F88 /* GameOverLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverLayer.m; sourceTree = "<group>"; };
 		756E0C4D16EFE21E00B73F88 /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
@@ -510,8 +513,10 @@
 				756E0C4A16EDADEC00B73F88 /* GameOverLayer.h */,
 				756E0C4B16EDADEC00B73F88 /* GameOverLayer.m */,
 				756E0C4D16EFE21E00B73F88 /* Bullet.h */,
-				756E0CA316F216A600B73F88 /* GameConfig.h */,
 				756E0C4E16EFE21E00B73F88 /* Bullet.m */,
+				75596DA6170117BD000B09FD /* Enemy.h */,
+				75596DA7170117BD000B09FD /* Enemy.m */,
+				756E0CA316F216A600B73F88 /* GameConfig.h */,
 				75E3D68516DEADA9004959CC /* Resources */,
 				75E3D69D16DEADA9004959CC /* libs */,
 				75E3D80E16DEADAC004959CC /* Supporting Files */,
@@ -1116,6 +1121,7 @@
 				75E3D81A16DEADAC004959CC /* IntroLayer.m in Sources */,
 				756E0C4C16EDADEC00B73F88 /* GameOverLayer.m in Sources */,
 				756E0C4F16EFE21E00B73F88 /* Bullet.m in Sources */,
+				75596DA8170117BD000B09FD /* Enemy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
