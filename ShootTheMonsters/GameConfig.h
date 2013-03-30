@@ -12,9 +12,9 @@
 #define kProjectileFile @"projectile.png"
 #define kMonsterFile @"monster.png"
 #define kProjectileSpeed 480
-#define kVectorUp     ccp(0,1)
-#define kVectorDown   ccp(0,-1)
-#define kVectorRight  ccp(1,0)
-#define kVectorLeft   ccp(-1,0)
+#define kVectorUp     CGPointMake(0,1)
+#define kVectorDown   CGPointMake(0,-1)
+#define kVectorRight  CGPointMake(1,0)
+#define kVectorLeft   CGPointMake(-1,0)
 
 #endif

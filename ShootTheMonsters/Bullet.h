@@ -23,4 +23,5 @@
 - (id)initWithStartPosition:(CGPoint)startPosition touchLocation:(CGPoint)touchLocation layer:(CCLayer*)layer;
 - (void)updatePostion:(ccTime)dt;
 - (void)remove;
+- (BOOL)outsideWindow;
 @end

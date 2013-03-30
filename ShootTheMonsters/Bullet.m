@@ -44,4 +44,12 @@
   [_layer removeChild:self.sprite cleanup:YES];
 }
 
+- (BOOL)outsideWindow{
+  CGSize winSize = [[CCDirector sharedDirector] winSize];
+  if (winSize.height < self.sprite.position.y || winSize.width < self.sprite.position.x){
+    return YES;
+  } else
+    return NO;
+}
+
 @end

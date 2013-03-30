@@ -42,4 +42,11 @@
   [_layer removeChild:self.sprite cleanup:YES];
 }
 
+- (BOOL)outsideWindow{
+  if (0 > self.sprite.position.x){
+    return YES;
+  } else
+    return NO;
+}
+
 @end

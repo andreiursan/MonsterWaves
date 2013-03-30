@@ -59,46 +59,47 @@
 }
 
 - (void)update:(ccTime)dt {
+  NSMutableArray *projectilesToDelete = [[NSMutableArray alloc] init];
+  NSMutableArray *monstersToDelete = [[NSMutableArray alloc] init];
+  
   for (Bullet *projectile in _projectiles) {
     [projectile updatePostion:dt];
   }
+  
   for (Enemy *enemy in _monsters) {
     [enemy updatePosition:dt];
+    if([enemy outsideWindow]){
+      CCScene *gameOverScene = [GameOverLayer sceneWithWon:NO];
+      [[CCDirector sharedDirector] replaceScene:gameOverScene];
+    }
   }
   
-  NSMutableArray *projectilesToDelete = [[NSMutableArray alloc] init];
-
   for (Bullet *projectile in _projectiles) {
-  
-    NSMutableArray *monstersToDelete = [[NSMutableArray alloc] init];
-
+    // Loop to determine Collision
     for (Enemy *monster in _monsters) {
       if (CGRectIntersectsRect(projectile.sprite.boundingBox,
                                monster.sprite.boundingBox)) {
         [monstersToDelete addObject:monster];
+        [projectilesToDelete addObject:projectile];
+        _monstersDestroyed++;
       }
     }
-    
-    for (Enemy *monster in monstersToDelete) {
-      [monster remove];
-      [_monsters removeObject:monster];
-      _monstersDestroyed++;
-      if (_monstersDestroyed >= 30){
-        CCScene *gameOverScene = [GameOverLayer sceneWithWon:YES];
-        [[CCDirector sharedDirector] replaceScene:gameOverScene];
-      }
-    }
-    
-    if (monstersToDelete.count > 0 || winSize.height < projectile.sprite.position.y || winSize.width < projectile.sprite.position.x ) {
+    if ([projectile outsideWindow]) {
       [projectilesToDelete addObject:projectile];
     }
-    
   }
-  
+  if (_monstersDestroyed >= 30){
+    CCScene *gameOverScene = [GameOverLayer sceneWithWon:YES];
+    [[CCDirector sharedDirector] replaceScene:gameOverScene];
+  }
+  //Remove unused GameObjects
   for (Bullet *projectile in projectilesToDelete) {
     [projectile remove];
-    NSLog(@"projectiles %d", _projectiles.count);
     [_projectiles removeObject:projectile];
+  }
+  for (Enemy *monster in monstersToDelete) {
+    [monster remove];
+    [_monsters removeObject:monster];
   }
 }
 

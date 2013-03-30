@@ -20,4 +20,5 @@
 - (id)initOnLayer:(CCLayer *)layer;
 - (void)updatePosition:(ccTime)dt;
 - (void)remove;
+- (BOOL)outsideWindow;
 @end
