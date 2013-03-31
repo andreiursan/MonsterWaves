@@ -26,9 +26,7 @@
 	if((self=[super initWithColor:ccc4(255,255,255,255)])) {
     [self setTouchEnabled:YES];
     winSize = [[CCDirector sharedDirector] winSize];
-    player  = [CCSprite spriteWithFile:@"player.png"];
-    player.position = ccp(player.contentSize.width/2, winSize.height/2);
-    [self addChild: player];
+    _player = [Player createOnLayer:self];
     _monsters    = [NSMutableArray new];
     _projectiles = [NSMutableArray new];
     _touches     = [NSMutableArray new];
@@ -49,7 +47,7 @@
   UITouch *touch = [touches anyObject];
   [_touches addObject:touch];
   CGPoint touchLocation = [self convertTouchToNodeSpace:touch];
-  Bullet *bullet = [Bullet createWithStartPosition:player.position touchLocation:touchLocation layer: self];
+  Bullet *bullet = [Bullet createWithStartPosition:_player.sprite.position touchLocation:touchLocation layer: self];
   [_projectiles addObject:bullet];
 }
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		75596DA8170117BD000B09FD /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75596DA7170117BD000B09FD /* Enemy.m */; };
+		75622F4917085E01006C82F0 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 75622F4817085E01006C82F0 /* Player.m */; };
 		756E0C4C16EDADEC00B73F88 /* GameOverLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E0C4B16EDADEC00B73F88 /* GameOverLayer.m */; };
 		756E0C4F16EFE21E00B73F88 /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E0C4E16EFE21E00B73F88 /* Bullet.m */; };
 		75E3D67316DEADA9004959CC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67216DEADA9004959CC /* QuartzCore.framework */; };
@@ -155,6 +156,8 @@
 /* Begin PBXFileReference section */
 		75596DA6170117BD000B09FD /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
 		75596DA7170117BD000B09FD /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
+		75622F4717085E01006C82F0 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		75622F4817085E01006C82F0 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		756E0C4A16EDADEC00B73F88 /* GameOverLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverLayer.h; sourceTree = "<group>"; };
 		756E0C4B16EDADEC00B73F88 /* GameOverLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverLayer.m; sourceTree = "<group>"; };
 		756E0C4D16EFE21E00B73F88 /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
@@ -512,6 +515,8 @@
 				75E3D81916DEADAC004959CC /* IntroLayer.m */,
 				756E0C4A16EDADEC00B73F88 /* GameOverLayer.h */,
 				756E0C4B16EDADEC00B73F88 /* GameOverLayer.m */,
+				75622F4717085E01006C82F0 /* Player.h */,
+				75622F4817085E01006C82F0 /* Player.m */,
 				756E0C4D16EFE21E00B73F88 /* Bullet.h */,
 				756E0C4E16EFE21E00B73F88 /* Bullet.m */,
 				75596DA6170117BD000B09FD /* Enemy.h */,
@@ -1122,6 +1127,7 @@
 				756E0C4C16EDADEC00B73F88 /* GameOverLayer.m in Sources */,
 				756E0C4F16EFE21E00B73F88 /* Bullet.m in Sources */,
 				75596DA8170117BD000B09FD /* Enemy.m in Sources */,
+				75622F4917085E01006C82F0 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

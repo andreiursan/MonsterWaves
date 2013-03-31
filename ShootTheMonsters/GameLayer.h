@@ -14,10 +14,11 @@
 #import "GameOverLayer.h"
 #import "Bullet.h"
 #import "Enemy.h"
+#import "Player.h"
 
 @interface GameLayer : CCLayerColor
 {
-  CCSprite *player;
+  Player *_player;
   CGSize winSize;
   NSMutableArray * _monsters;
   NSMutableArray * _projectiles;
