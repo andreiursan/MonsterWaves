@@ -74,8 +74,8 @@
     }
   }
   
+  // Collision Detection happens here
   for (Bullet *projectile in _projectiles) {
-    // Loop to determine Collision
     for (Enemy *monster in _monsters) {
       if (CGRectIntersectsRect(projectile.sprite.boundingBox,
                                monster.sprite.boundingBox)) {
@@ -92,6 +92,7 @@
     CCScene *gameOverScene = [GameOverLayer sceneWithWon:YES];
     [[CCDirector sharedDirector] replaceScene:gameOverScene];
   }
+  
   //Remove unused GameObjects
   for (Bullet *projectile in projectilesToDelete) {
     [projectile remove];
@@ -102,7 +103,5 @@
     [_monsters removeObject:monster];
   }
 }
-
-
 
 @end
