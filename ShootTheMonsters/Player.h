@@ -11,7 +11,6 @@
 #import "GameConfig.h"
 
 @interface Player : NSObject {
-  CGPoint _direction;
   CCLayer *_layer;
 }
 

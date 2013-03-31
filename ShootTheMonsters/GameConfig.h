@@ -17,5 +17,8 @@
 #define kVectorDown   CGPointMake(0,-1)
 #define kVectorRight  CGPointMake(1,0)
 #define kVectorLeft   CGPointMake(-1,0)
+#define kWinSize [[CCDirector sharedDirector] winSize]
+#define kWinHeight [[CCDirector sharedDirector] winSize].height
+#define kWinWidth [[CCDirector sharedDirector] winSize].width
 
 #endif

@@ -25,7 +25,6 @@
 - (id)init {
 	if((self=[super initWithColor:ccc4(255,255,255,255)])) {
     [self setTouchEnabled:YES];
-    winSize = [[CCDirector sharedDirector] winSize];
     _player = [Player createOnLayer:self];
     _monsters    = [NSMutableArray new];
     _projectiles = [NSMutableArray new];
