@@ -15,10 +15,8 @@
 }
 
 - (id)initOnLayer:(CCLayer *)layer {
-  if ((self = [super init])) {
-    _layer = layer;
-    self.sprite = [CCSprite spriteWithFile:kPlayerFile];
-    self.sprite.position = ccp(self.sprite.contentSize.width/2, kWinHeight/2);
+  if ((self = [super initOnLayer:layer withSpriteFile:kPlayerFile])) {
+    [self setPosition: ccp(self.sprite.contentSize.width/2, kWinHeight/2)];
     [_layer addChild: self.sprite];
     return self;
   } else {

@@ -29,6 +29,7 @@
     _monsters    = [NSMutableArray new];
     _projectiles = [NSMutableArray new];
     _touches     = [NSMutableArray new];
+    
     [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"background-music-aac.caf"];
     [self schedule:@selector(gameLogic:) interval:1.0];
     [self schedule:@selector(update:)];
@@ -65,7 +66,7 @@
   
   for (Enemy *enemy in _monsters) {
     [enemy updatePosition:dt];
-    if([enemy outsideWindow]){
+    if([enemy isOutsideWindow]){
       CCScene *gameOverScene = [GameOverLayer sceneWithWon:NO];
       [[CCDirector sharedDirector] replaceScene:gameOverScene];
     }
@@ -81,7 +82,7 @@
         _monstersDestroyed++;
       }
     }
-    if ([projectile outsideWindow]) {
+    if ([projectile isOutsideWindow]) {
       [projectilesToDelete addObject:projectile];
     }
   }
@@ -92,11 +93,11 @@
   
   //Remove unused GameObjects
   for (Bullet *projectile in projectilesToDelete) {
-    [projectile remove];
+    [projectile removeFromLayer];
     [_projectiles removeObject:projectile];
   }
   for (Enemy *monster in monstersToDelete) {
-    [monster remove];
+    [monster removeFromLayer];
     [_monsters removeObject:monster];
   }
 }

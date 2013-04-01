@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "GameConfig.h"
+#import "GameObject.h"
 
-@interface Player : NSObject {
-  CCLayer *_layer;
+@interface Player : GameObject {
 }
 
 @property (nonatomic, strong) CCSprite *sprite;

@@ -22,13 +22,12 @@
 - (id)initWithStartPosition:(CGPoint)startPosition
               touchLocation:(CGPoint)touchLocation
                       layer:(CCLayer*)layer {
-  if (self = [super init]) {
-    _layer = layer;
-    self.sprite = [CCSprite spriteWithFile:kProjectileFile];
+  
+  if ((self = [super initOnLayer:layer withSpriteFile:kProjectileFile])) {
     _direction = ccpNormalize(ccpSub(touchLocation, startPosition));
     _speed = kProjectileSpeed;
-    self.sprite.position = startPosition;
-    [_layer addChild:self.sprite];
+    [self setPosition: startPosition];
+    [_layer addChild: self.sprite];
     [[SimpleAudioEngine sharedEngine] playEffect:@"pew-pew-lei.caf"];
     return self;
   } else {
@@ -38,17 +37,6 @@
 
 - (void)updatePostion:(ccTime) dt{
   self.sprite.position = ccpAdd(ccpMult(_direction, dt * _speed), self.sprite.position);
-}
-
-- (void)remove {
-  [_layer removeChild:self.sprite cleanup:YES];
-}
-
-- (BOOL)outsideWindow{
-  if (kWinHeight < self.sprite.position.y || kWinWidth < self.sprite.position.x){
-    return YES;
-  } else
-    return NO;
 }
 
 @end

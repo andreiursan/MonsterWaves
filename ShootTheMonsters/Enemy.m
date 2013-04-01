@@ -15,19 +15,12 @@
 }
 
 - (id)initOnLayer:(CCLayer *)layer {
-  if ((self = [super init])) {
- 
-    CGSize winSize = [[CCDirector sharedDirector] winSize];
-    self.sprite = [CCSprite spriteWithFile:kMonsterFile];
-    _layer = layer;
-    
+  if ((self = [super initOnLayer:layer withSpriteFile:kMonsterFile])) {
     int minY = self.sprite.contentSize.height / 2;
-    int maxY = winSize.height - minY;
+    int maxY = kWinHeight - minY;
     int actualY = (arc4random() % (maxY-minY)) + minY;
-    self.sprite.position = ccp(winSize.width, actualY);
-    
+    self.sprite.position = ccp(kWinWidth, actualY);
     [_layer addChild: self.sprite];
-    
     return self;
   } else {
     return nil;
@@ -38,15 +31,8 @@
   self.sprite.position = ccpAdd(self.sprite.position, kVectorLeft);
 }
 
-- (void)remove {
-  [_layer removeChild:self.sprite cleanup:YES];
-}
-
-- (BOOL)outsideWindow{
-  if (0 > self.sprite.position.x){
-    return YES;
-  } else
-    return NO;
+- (BOOL)isOutsideWindow {
+  return [self position].x < 0;
 }
 
 @end

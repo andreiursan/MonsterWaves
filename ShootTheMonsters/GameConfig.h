@@ -20,5 +20,6 @@
 #define kWinSize [[CCDirector sharedDirector] winSize]
 #define kWinHeight [[CCDirector sharedDirector] winSize].height
 #define kWinWidth [[CCDirector sharedDirector] winSize].width
+#define kWinBounds [[CCDirector sharedDirector] view].bounds
 
 #endif
