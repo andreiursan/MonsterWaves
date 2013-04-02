@@ -156,6 +156,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75066A31170BA215009A320A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		75596DA6170117BD000B09FD /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
 		75596DA7170117BD000B09FD /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
 		75622F4717085E01006C82F0 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
@@ -531,6 +532,7 @@
 				75E3D68416DEADA9004959CC /* ShootTheMonsters */,
 				75E3D67116DEADA9004959CC /* Frameworks */,
 				75E3D67016DEADA9004959CC /* Products */,
+				75066A31170BA215009A320A /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
