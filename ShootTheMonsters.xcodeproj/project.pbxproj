@@ -10,6 +10,7 @@
 		75596DA8170117BD000B09FD /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75596DA7170117BD000B09FD /* Enemy.m */; };
 		75622F4917085E01006C82F0 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 75622F4817085E01006C82F0 /* Player.m */; };
 		75622F4C1708F795006C82F0 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 75622F4B1708F795006C82F0 /* GameObject.m */; };
+		75622F52170B58AA006C82F0 /* GameObject+Movement.m in Sources */ = {isa = PBXBuildFile; fileRef = 75622F51170B58AA006C82F0 /* GameObject+Movement.m */; };
 		756E0C4C16EDADEC00B73F88 /* GameOverLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E0C4B16EDADEC00B73F88 /* GameOverLayer.m */; };
 		756E0C4F16EFE21E00B73F88 /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E0C4E16EFE21E00B73F88 /* Bullet.m */; };
 		75E3D67316DEADA9004959CC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67216DEADA9004959CC /* QuartzCore.framework */; };
@@ -161,6 +162,9 @@
 		75622F4817085E01006C82F0 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		75622F4A1708F794006C82F0 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
 		75622F4B1708F795006C82F0 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject.m; sourceTree = "<group>"; };
+		75622F50170B58AA006C82F0 /* GameObject+Movement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GameObject+Movement.h"; sourceTree = "<group>"; };
+		75622F51170B58AA006C82F0 /* GameObject+Movement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GameObject+Movement.m"; sourceTree = "<group>"; };
+		75622F54170B8FAA006C82F0 /* Movable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movable.h; sourceTree = "<group>"; };
 		756E0C4A16EDADEC00B73F88 /* GameOverLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverLayer.h; sourceTree = "<group>"; };
 		756E0C4B16EDADEC00B73F88 /* GameOverLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverLayer.m; sourceTree = "<group>"; };
 		756E0C4D16EFE21E00B73F88 /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
@@ -474,6 +478,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75622F4F170B5868006C82F0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				75622F50170B58AA006C82F0 /* GameObject+Movement.h */,
+				75622F51170B58AA006C82F0 /* GameObject+Movement.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		75622F53170B8F5A006C82F0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				75622F54170B8FAA006C82F0 /* Movable.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		75E3D66616DEADA9004959CC = {
 			isa = PBXGroup;
 			children = (
@@ -510,6 +531,8 @@
 		75E3D68416DEADA9004959CC /* ShootTheMonsters */ = {
 			isa = PBXGroup;
 			children = (
+				75622F53170B8F5A006C82F0 /* Protocols */,
+				75622F4F170B5868006C82F0 /* Categories */,
 				75E3D81216DEADAC004959CC /* AppDelegate.h */,
 				75E3D81316DEADAC004959CC /* AppDelegate.m */,
 				75E3D81816DEADAC004959CC /* IntroLayer.h */,
@@ -1134,6 +1157,7 @@
 				75596DA8170117BD000B09FD /* Enemy.m in Sources */,
 				75622F4917085E01006C82F0 /* Player.m in Sources */,
 				75622F4C1708F795006C82F0 /* GameObject.m in Sources */,
+				75622F52170B58AA006C82F0 /* GameObject+Movement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

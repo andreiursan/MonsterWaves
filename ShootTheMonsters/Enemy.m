@@ -20,15 +20,13 @@
     int maxY = kWinHeight - minY;
     int actualY = (arc4random() % (maxY-minY)) + minY;
     self.sprite.position = ccp(kWinWidth, actualY);
+    self.direction = kVectorLeft;
+    self.speed = 100;
     [_layer addChild: self.sprite];
     return self;
   } else {
     return nil;
   }
-}
-
-- (void)updatePosition:(ccTime)dt{
-  self.sprite.position = ccpAdd(self.sprite.position, kVectorLeft);
 }
 
 - (BOOL)isOutsideWindow {

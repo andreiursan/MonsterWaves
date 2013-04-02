@@ -8,8 +8,8 @@
 
 #import "Bullet.h"
 
-
 @implementation Bullet
+
 
 + (Bullet *)createWithStartPosition:(CGPoint)startPosition
                       touchLocation:(CGPoint)touchLocation
@@ -24,8 +24,8 @@
                       layer:(CCLayer*)layer {
   
   if ((self = [super initOnLayer:layer withSpriteFile:kProjectileFile])) {
-    _direction = ccpNormalize(ccpSub(touchLocation, startPosition));
-    _speed = kProjectileSpeed;
+    self.direction = ccpNormalize(ccpSub(touchLocation, startPosition));
+    self.speed = kProjectileSpeed;
     [self setPosition: startPosition];
     [_layer addChild: self.sprite];
     [[SimpleAudioEngine sharedEngine] playEffect:@"pew-pew-lei.caf"];
@@ -33,10 +33,6 @@
   } else {
     return nil;
   }
-}
-
-- (void)updatePostion:(ccTime) dt{
-  self.sprite.position = ccpAdd(ccpMult(_direction, dt * _speed), self.sprite.position);
 }
 
 @end

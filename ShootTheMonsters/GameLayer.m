@@ -61,7 +61,7 @@
   NSMutableArray *monstersToDelete = [[NSMutableArray alloc] init];
   
   for (Bullet *projectile in _projectiles) {
-    [projectile updatePostion:dt];
+    [projectile updatePosition:dt];
   }
   
   for (Enemy *enemy in _monsters) {

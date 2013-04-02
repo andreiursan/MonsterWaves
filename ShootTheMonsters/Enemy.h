@@ -10,13 +10,15 @@
 #import "cocos2d.h"
 #import "GameObject.h"
 #import "GameConfig.h"
+#import "Movable.h"
+#import "GameObject+Movement.h"
 
-@interface Enemy : GameObject {
-  int _speed;
-}
 
+@interface Enemy : GameObject <Movable>
+
+@property (assign)float speed;
+@property (assign)CGPoint direction;
 + (Enemy *)createOnLayer:(CCLayer *)layer;
 - (id)initOnLayer:(CCLayer *)layer;
-- (void)updatePosition:(ccTime)dt;
 
 @end

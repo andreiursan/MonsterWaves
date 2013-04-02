@@ -8,17 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
-#import "GameConfig.h"
 #import "SimpleAudioEngine.h"
+#import "GameConfig.h"
 #import "GameObject.h"
+#import "Movable.h"
+#import "GameObject+Movement.h"
 
-@interface Bullet : GameObject {
-  CGPoint _direction;
-  int _speed;
-}
+@interface Bullet : GameObject <Movable>
 
+@property (assign)float speed;
+@property (assign)CGPoint direction;
 + (Bullet *)createWithStartPosition:(CGPoint)startPosition touchLocation:(CGPoint)touchLocation layer:(CCLayer*)layer;
 - (id)initWithStartPosition:(CGPoint)startPosition touchLocation:(CGPoint)touchLocation layer:(CCLayer*)layer;
-- (void)updatePostion:(ccTime)dt;
 
 @end
