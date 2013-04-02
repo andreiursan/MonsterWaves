@@ -19,14 +19,13 @@
 @interface GameLayer : CCLayerColor
 {
   Player *_player;
-  CGSize winSize;
-  NSMutableArray * _monsters;
-  NSMutableArray * _projectiles;
-  NSMutableArray * _touches;
+  NSMutableArray *_monsters;
+  NSMutableArray *_projectiles;
+  NSMutableArray *_touches;
   int _monstersDestroyed;
 }
 
-+ (CCScene *) scene;
-- (void) addMonster;
++ (CCScene *)scene;
+- (void)addMonster;
 
 @end

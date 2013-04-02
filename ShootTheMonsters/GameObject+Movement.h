@@ -12,5 +12,4 @@
 
 @interface GameObject (Movement) <Movable>
 
-
 @end

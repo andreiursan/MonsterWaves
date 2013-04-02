@@ -30,7 +30,7 @@
 }
 
 - (BOOL)isOutsideWindow {
-  return [self position].x < 0;
+  return self.position.x < 0;
 }
 
 @end

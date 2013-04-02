@@ -14,7 +14,7 @@
 @dynamic direction, speed;
 
 - (void)updatePosition:(ccTime)dt {
-  self.sprite.position = ccpAdd(self.sprite.position, ccpMult(self.direction, dt * self.speed));
+  [self setPosition: ccpAdd(self.position, ccpMult(self.direction, dt * self.speed))];
 }
 
 @end

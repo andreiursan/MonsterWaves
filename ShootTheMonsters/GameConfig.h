@@ -21,5 +21,6 @@
 #define kWinHeight [[CCDirector sharedDirector] winSize].height
 #define kWinWidth [[CCDirector sharedDirector] winSize].width
 #define kWinBounds [[CCDirector sharedDirector] view].bounds
+#define kWinCenter CGPointMake(kWinWidth/2, kWinHeight/2)
 
 #endif
