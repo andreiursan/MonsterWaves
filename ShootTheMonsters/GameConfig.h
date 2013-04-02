@@ -13,6 +13,8 @@
 #define kMonsterFile @"monster.png"
 #define kPlayerFile @"player.png"
 #define kProjectileSpeed 480
+#define kMonsterMinSpeed 100
+#define kMonsterMaxSpeed 200
 #define kVectorUp     CGPointMake(0,1)
 #define kVectorDown   CGPointMake(0,-1)
 #define kVectorRight  CGPointMake(1,0)

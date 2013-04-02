@@ -16,13 +16,15 @@
 
 - (id)initOnLayer:(CCLayer *)layer {
   if ((self = [super initOnLayer:layer withSpriteFile:kMonsterFile])) {
+    
     int minY = self.sprite.contentSize.height / 2;
-    int maxY = kWinHeight - minY;
-    int actualY = (arc4random() % (maxY-minY)) + minY;
+    int actualY = minY + arc4random_uniform(kWinHeight-minY);
     self.sprite.position = ccp(kWinWidth, actualY);
+    
     self.direction = kVectorLeft;
-    self.speed = 100;
+    self.speed = kMonsterMinSpeed + arc4random_uniform(kMonsterMaxSpeed - kMonsterMinSpeed);
     [_layer addChild: self.sprite];
+    
     return self;
   } else {
     return nil;
