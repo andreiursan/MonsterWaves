@@ -495,6 +495,19 @@
 			name = GameObjects;
 			sourceTree = "<group>";
 		};
+		75066A30170BA16A009A320A /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				75E3D81816DEADAC004959CC /* IntroLayer.h */,
+				75E3D81916DEADAC004959CC /* IntroLayer.m */,
+				756E0C4A16EDADEC00B73F88 /* GameOverLayer.h */,
+				756E0C4B16EDADEC00B73F88 /* GameOverLayer.m */,
+				75E3D81516DEADAC004959CC /* GameLayer.h */,
+				75E3D81616DEADAC004959CC /* GameLayer.m */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
 		75622F4F170B5868006C82F0 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -548,16 +561,11 @@
 		75E3D68416DEADA9004959CC /* ShootTheMonsters */ = {
 			isa = PBXGroup;
 			children = (
+				75066A30170BA16A009A320A /* Layers */,
 				75066A2F170B96FB009A320A /* GameObjects */,
 				756E0CA316F216A600B73F88 /* GameConfig.h */,
 				75E3D81216DEADAC004959CC /* AppDelegate.h */,
 				75E3D81316DEADAC004959CC /* AppDelegate.m */,
-				75E3D81816DEADAC004959CC /* IntroLayer.h */,
-				75E3D81916DEADAC004959CC /* IntroLayer.m */,
-				756E0C4A16EDADEC00B73F88 /* GameOverLayer.h */,
-				756E0C4B16EDADEC00B73F88 /* GameOverLayer.m */,
-				75E3D81516DEADAC004959CC /* GameLayer.h */,
-				75E3D81616DEADAC004959CC /* GameLayer.m */,
 				75E3D68516DEADA9004959CC /* Resources */,
 				75E3D69D16DEADA9004959CC /* libs */,
 				75E3D80E16DEADAC004959CC /* Supporting Files */,
