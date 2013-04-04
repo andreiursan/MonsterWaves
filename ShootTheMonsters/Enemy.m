@@ -10,7 +10,7 @@
 
 @implementation Enemy
 
-+ (Enemy *)createOnLayer:(CCLayer *)layer {
++ (Enemy *)enemyOnLayer:(CCLayer *)layer {
   return [[Enemy alloc] initOnLayer:layer];
 }
 

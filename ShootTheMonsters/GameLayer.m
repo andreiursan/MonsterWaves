@@ -25,7 +25,7 @@
 - (id)init {
 	if((self=[super initWithColor:ccc4(255,255,255,255)])) {
     [self setTouchEnabled:YES];
-    _player = [Player createOnLayer:self];
+    _player = [Player playerOnLayer:self];
     _monsters    = [NSMutableArray new];
     _projectiles = [NSMutableArray new];
     _touches     = [NSMutableArray new];
@@ -47,12 +47,12 @@
   UITouch *touch = [touches anyObject];
   [_touches addObject:touch];
   CGPoint touchLocation = [self convertTouchToNodeSpace:touch];
-  Bullet *bullet = [Bullet createWithStartPosition:_player.sprite.position touchLocation:touchLocation layer: self];
+  Bullet *bullet = [Bullet bulletWithStartPosition:_player.sprite.position toTouchLocation:touchLocation layer: self];
   [_projectiles addObject:bullet];
 }
 
 - (void)addMonster{
-  Enemy *enemy = [Enemy createOnLayer:self];
+  Enemy *enemy = [Enemy enemyOnLayer:self];
   [_monsters addObject:enemy];
 }
 

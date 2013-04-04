@@ -10,7 +10,7 @@
 
 @implementation Player
 
-+ (Player *)createOnLayer:(CCLayer *)layer {
++ (Player *)playerOnLayer:(CCLayer *)layer {
   return [[Player alloc] initOnLayer:layer];
 }
 

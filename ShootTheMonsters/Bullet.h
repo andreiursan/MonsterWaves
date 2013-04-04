@@ -18,7 +18,7 @@
 
 @property (assign)float speed;
 @property (assign)CGPoint direction;
-+ (Bullet *)createWithStartPosition:(CGPoint)startPosition touchLocation:(CGPoint)touchLocation layer:(CCLayer*)layer;
-- (id)initWithStartPosition:(CGPoint)startPosition touchLocation:(CGPoint)touchLocation layer:(CCLayer*)layer;
++ (Bullet *)bulletWithStartPosition:(CGPoint)startPosition toTouchLocation:(CGPoint)touchLocation layer:(CCLayer*)layer;
+- (id)initWithStartPosition:(CGPoint)startPosition toTouchLocation:(CGPoint)touchLocation layer:(CCLayer*)layer;
 
 @end

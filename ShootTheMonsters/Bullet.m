@@ -11,16 +11,16 @@
 @implementation Bullet
 
 
-+ (Bullet *)createWithStartPosition:(CGPoint)startPosition
-                      touchLocation:(CGPoint)touchLocation
++ (Bullet *)bulletWithStartPosition:(CGPoint)startPosition
+                      toTouchLocation:(CGPoint)touchLocation
                               layer:(CCLayer*)layer{
   return [[Bullet alloc] initWithStartPosition:(CGPoint)startPosition
-                                 touchLocation:(CGPoint)touchLocation
+                                 toTouchLocation:(CGPoint)touchLocation
                                          layer:(CCLayer*)layer];
 }
 
 - (id)initWithStartPosition:(CGPoint)startPosition
-              touchLocation:(CGPoint)touchLocation
+              toTouchLocation:(CGPoint)touchLocation
                       layer:(CCLayer*)layer {
   
   if ((self = [super initOnLayer:layer withSpriteFile:kProjectileFile])) {

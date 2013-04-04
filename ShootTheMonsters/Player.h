@@ -15,7 +15,7 @@
 }
 
 @property (nonatomic, strong) CCSprite *sprite;
-+ (Player *)createOnLayer:(CCLayer *)layer;
++ (Player *)playerOnLayer:(CCLayer *)layer;
 - (id)initOnLayer:(CCLayer *)layer;
 
 @end

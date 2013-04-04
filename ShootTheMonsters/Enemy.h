@@ -18,7 +18,7 @@
 
 @property (assign)float speed;
 @property (assign)CGPoint direction;
-+ (Enemy *)createOnLayer:(CCLayer *)layer;
++ (Enemy *)enemyOnLayer:(CCLayer *)layer;
 - (id)initOnLayer:(CCLayer *)layer;
 
 @end
