@@ -15,13 +15,12 @@
 }
 
 - (id)initOnLayer:(CCLayer *)layer {
-  if ((self = [super initOnLayer:layer withSpriteFile:kPlayerFile])) {
+  self = [super initOnLayer:layer withSpriteFile:kPlayerFile];
+  if (self) {
     [self setPosition: ccp(self.sprite.contentSize.width/2, kWinHeight/2)];
     [_layer addChild: self.sprite];
-    return self;
-  } else {
-    return nil;
   }
+  return self;
 }
 
 @end

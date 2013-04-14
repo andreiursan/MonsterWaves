@@ -11,9 +11,7 @@
 
 #pragma mark - GameLayer
 
-
 @implementation GameLayer
-
 
 + (CCScene *)scene {
 	CCScene *scene = [CCScene node];
@@ -23,7 +21,8 @@
 }
 
 - (id)init {
-	if((self=[super initWithColor:ccc4(255,255,255,255)])) {
+  self = [super initWithColor:ccc4(255,255,255,255)];
+	if(self) {
     [self setTouchEnabled:YES];
     _player = [Player playerOnLayer:self];
     _monsters    = [NSMutableArray new];
@@ -33,10 +32,8 @@
     [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"background-music-aac.caf"];
     [self schedule:@selector(gameLogic:) interval:1.0];
     [self schedule:@selector(update:)];
-    return self;
-	} else {
-    return nil;
-  }
+	}
+  return self;
 }
 
 - (void)gameLogic:(ccTime)dt {

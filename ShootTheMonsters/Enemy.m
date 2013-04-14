@@ -15,8 +15,8 @@
 }
 
 - (id)initOnLayer:(CCLayer *)layer {
-  if ((self = [super initOnLayer:layer withSpriteFile:kMonsterFile])) {
-    
+  self = [super initOnLayer:layer withSpriteFile:kMonsterFile];
+  if (self) {
     int minY = self.sprite.contentSize.height / 2;
     int actualY = minY + arc4random_uniform(kWinHeight-minY);
     self.sprite.position = ccp(kWinWidth, actualY);
@@ -24,11 +24,8 @@
     self.direction = kVectorLeft;
     self.speed = kMonsterMinSpeed + arc4random_uniform(kMonsterMaxSpeed - kMonsterMinSpeed);
     [_layer addChild: self.sprite];
-    
-    return self;
-  } else {
-    return nil;
   }
+  return self;
 }
 
 - (BOOL)isOutsideWindow {

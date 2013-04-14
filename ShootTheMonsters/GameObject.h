@@ -20,4 +20,5 @@
 - (void)setPosition:(CGPoint)position;
 - (void)removeFromLayer;
 - (BOOL)isOutsideWindow;
+
 @end

@@ -22,17 +22,15 @@
 - (id)initWithStartPosition:(CGPoint)startPosition
               toTouchLocation:(CGPoint)touchLocation
                       layer:(CCLayer*)layer {
-  
-  if ((self = [super initOnLayer:layer withSpriteFile:kProjectileFile])) {
+  self = [super initOnLayer:layer withSpriteFile:kProjectileFile];
+  if (self) {
     self.direction = ccpNormalize(ccpSub(touchLocation, startPosition));
     self.speed = kProjectileSpeed;
     [self setPosition: startPosition];
     [_layer addChild: self.sprite];
     [[SimpleAudioEngine sharedEngine] playEffect:@"pew-pew-lei.caf"];
-    return self;
-  } else {
-    return nil;
   }
+  return self;
 }
 
 @end

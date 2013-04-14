@@ -9,7 +9,9 @@
 
 #import "cocos2d.h"
 
-@interface IntroLayer : CCLayer
+@interface IntroLayer : CCLayer {
+  CCSprite *_background;
+}
 
 + (CCScene *)scene;
 

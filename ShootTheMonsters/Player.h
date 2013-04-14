@@ -11,8 +11,7 @@
 #import "GameConfig.h"
 #import "GameObject.h"
 
-@interface Player : GameObject {
-}
+@interface Player : GameObject
 
 @property (nonatomic, strong) CCSprite *sprite;
 + (Player *)playerOnLayer:(CCLayer *)layer;

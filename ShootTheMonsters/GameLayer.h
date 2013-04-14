@@ -16,8 +16,7 @@
 #import "Enemy.h"
 #import "Player.h"
 
-@interface GameLayer : CCLayerColor
-{
+@interface GameLayer : CCLayerColor {
   Player *_player;
   NSMutableArray *_monsters;
   NSMutableArray *_projectiles;

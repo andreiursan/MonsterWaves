@@ -10,16 +10,13 @@
 
 @implementation GameObject
 
-- (id)initOnLayer:(CCLayer *)layer
-   withSpriteFile:(NSString *)file {
-  
-  if ((self = [super init])) {
+- (id)initOnLayer:(CCLayer *)layer withSpriteFile:(NSString *)file {
+  self = [super init];
+  if (self) {
     _layer = layer;
     self.sprite = [CCSprite spriteWithFile:file];
-    return self;
-  } else {
-    return nil;
   }
+  return self;
 }
 
 - (CGPoint)position {
