@@ -25,6 +25,6 @@
 }
 
 + (CCScene *)scene;
-- (void)addMonster;
+- (void)slowUpdate:(ccTime)dt;
 
 @end

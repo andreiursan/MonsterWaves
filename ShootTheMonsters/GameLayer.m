@@ -30,13 +30,13 @@
     _touches     = [NSMutableArray new];
     
     [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"background-music-aac.caf"];
-    [self schedule:@selector(gameLogic:) interval:1.0];
-    [self schedule:@selector(update:)];
+    [self scheduleUpdate];
+    [self schedule:@selector(slowUpdate:) interval:1.0];
 	}
   return self;
 }
 
-- (void)gameLogic:(ccTime)dt {
+- (void)slowUpdate:(ccTime)dt {
   [self addMonster];
 }
 
