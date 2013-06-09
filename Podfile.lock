@@ -1,13 +1,19 @@
 PODS:
-  - cocos2d (2.1.rc0)
-  - Kiwi (2.0.6)
+  - cocos2d (2.1-rc2)
+  - Expecta (0.2.1)
+  - OCMock (2.1.1)
+  - Specta (0.1.8)
 
 DEPENDENCIES:
-  - cocos2d (~> 2.0)
-  - Kiwi (~> 2.0.6)
+  - cocos2d (~> 2.1-rc2)
+  - Expecta (~> 0.2.1)
+  - OCMock (~> 2.1.1)
+  - Specta (~> 0.1.8)
 
 SPEC CHECKSUMS:
-  cocos2d: a29a090c74a2afa6e5f9115354bbe9e3d72a929d
-  Kiwi: 56082a80f942de4d10423d8d8a599ab30cf50228
+  cocos2d: 32f616ec53315008dfbff3d2f6cc064c44615ad8
+  Expecta: d46fb1bd78c90a83da0158b9b1e108de106e369f
+  OCMock: 79212e5e328378af5cfd6edb5feacfd6c49cd8a3
+  Specta: 8a215d36842f2d29e888786937d1bf7f8725f780
 
-COCOAPODS: 0.18.1
+COCOAPODS: 0.20.2

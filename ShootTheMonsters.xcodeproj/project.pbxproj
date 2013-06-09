@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2EA414DC0F704E078D52CAF5 /* libPods-KiwiUnitTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 472BCCCB749145D2A6666FE7 /* libPods-KiwiUnitTest.a */; };
 		75596DA8170117BD000B09FD /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75596DA7170117BD000B09FD /* Enemy.m */; };
 		75622F4917085E01006C82F0 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 75622F4817085E01006C82F0 /* Player.m */; };
 		75622F4C1708F795006C82F0 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 75622F4B1708F795006C82F0 /* GameObject.m */; };
 		75622F52170B58AA006C82F0 /* GameObject+Movement.m in Sources */ = {isa = PBXBuildFile; fileRef = 75622F51170B58AA006C82F0 /* GameObject+Movement.m */; };
 		756E0C4C16EDADEC00B73F88 /* GameOverLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E0C4B16EDADEC00B73F88 /* GameOverLayer.m */; };
 		756E0C4F16EFE21E00B73F88 /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E0C4E16EFE21E00B73F88 /* Bullet.m */; };
-		75A7B8FD171B7E9F00866B5F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A7B8FC171B7E9F00866B5F /* SenTestingKit.framework */; };
-		75A7B8FE171B7E9F00866B5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67C16DEADA9004959CC /* UIKit.framework */; };
-		75A7B8FF171B7E9F00866B5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67E16DEADA9004959CC /* Foundation.framework */; };
-		75A7B905171B7E9F00866B5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75A7B903171B7E9F00866B5F /* InfoPlist.strings */; };
-		75A7B910171BD5C800866B5F /* BulletSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A7B90F171BD5C800866B5F /* BulletSpec.m */; };
+		759B33F5176518F600A6281E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A7B8FC171B7E9F00866B5F /* SenTestingKit.framework */; };
+		759B33F6176518F600A6281E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67C16DEADA9004959CC /* UIKit.framework */; };
+		759B33F7176518F600A6281E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67E16DEADA9004959CC /* Foundation.framework */; };
+		759B33FD176518F600A6281E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 759B33FB176518F600A6281E /* InfoPlist.strings */; };
+		759B3400176518F600A6281E /* Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = 759B33FF176518F600A6281E /* Specs.m */; };
 		75A7B918171E7CA900866B5F /* ObjectHaven.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A7B917171E7CA900866B5F /* ObjectHaven.m */; };
-		75A7B91A171E7D1B00866B5F /* ObjectHavenSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A7B919171E7D1B00866B5F /* ObjectHavenSpec.m */; };
 		75E3D67316DEADA9004959CC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67216DEADA9004959CC /* QuartzCore.framework */; };
 		75E3D67516DEADA9004959CC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67416DEADA9004959CC /* OpenGLES.framework */; };
 		75E3D67716DEADA9004959CC /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67616DEADA9004959CC /* OpenAL.framework */; };
@@ -53,11 +51,12 @@
 		75E3D82F16DEB19F004959CC /* projectile.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E3D82616DEB19F004959CC /* projectile.png */; };
 		75E3D83016DEB19F004959CC /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 75E3D82816DEB19F004959CC /* background-music-aac.caf */; };
 		75E3D83116DEB19F004959CC /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 75E3D82916DEB19F004959CC /* pew-pew-lei.caf */; };
+		81E8121720304974B90CE5DB /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B346E96BC44F3C8ADBF7D5 /* libPods-Specs.a */; };
 		B8581AEB5EFE4BF48A69DB51 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB17DBD631143C1B12F2040 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13FFBE8754EC48A584692278 /* Pods-KiwiUnitTest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KiwiUnitTest.xcconfig"; path = "Pods/Pods-KiwiUnitTest.xcconfig"; sourceTree = SOURCE_ROOT; };
+		23B346E96BC44F3C8ADBF7D5 /* libPods-Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		472BCCCB749145D2A6666FE7 /* libPods-KiwiUnitTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KiwiUnitTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75066A31170BA215009A320A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		75596DA6170117BD000B09FD /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
@@ -74,15 +73,16 @@
 		756E0C4D16EFE21E00B73F88 /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
 		756E0C4E16EFE21E00B73F88 /* Bullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bullet.m; sourceTree = "<group>"; };
 		756E0CA316F216A600B73F88 /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
-		75A7B8FB171B7E9F00866B5F /* KiwiUnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiwiUnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7590C8E1F08C40DBB8B46F81 /* Pods-Specs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.xcconfig"; path = "Pods/Pods-Specs.xcconfig"; sourceTree = SOURCE_ROOT; };
+		759B33F4176518F600A6281E /* Specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		759B33FA176518F600A6281E /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
+		759B33FC176518F600A6281E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		759B33FE176518F600A6281E /* Specs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Specs.h; sourceTree = "<group>"; };
+		759B33FF176518F600A6281E /* Specs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Specs.m; sourceTree = "<group>"; };
+		759B3401176518F600A6281E /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		75A7B8FC171B7E9F00866B5F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		75A7B902171B7E9F00866B5F /* KiwiUnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KiwiUnitTest-Info.plist"; sourceTree = "<group>"; };
-		75A7B904171B7E9F00866B5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		75A7B909171B7E9F00866B5F /* KiwiUnitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KiwiUnitTest-Prefix.pch"; sourceTree = "<group>"; };
-		75A7B90F171BD5C800866B5F /* BulletSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulletSpec.m; sourceTree = "<group>"; };
 		75A7B916171E7CA900866B5F /* ObjectHaven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectHaven.h; sourceTree = "<group>"; };
 		75A7B917171E7CA900866B5F /* ObjectHaven.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectHaven.m; sourceTree = "<group>"; };
-		75A7B919171E7D1B00866B5F /* ObjectHavenSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectHavenSpec.m; sourceTree = "<group>"; };
 		75E3D66F16DEADA9004959CC /* ShootTheMonsters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootTheMonsters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E3D67216DEADA9004959CC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		75E3D67416DEADA9004959CC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -126,14 +126,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		75A7B8F7171B7E9E00866B5F /* Frameworks */ = {
+		759B33F0176518F600A6281E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75A7B8FD171B7E9F00866B5F /* SenTestingKit.framework in Frameworks */,
-				75A7B8FE171B7E9F00866B5F /* UIKit.framework in Frameworks */,
-				75A7B8FF171B7E9F00866B5F /* Foundation.framework in Frameworks */,
-				2EA414DC0F704E078D52CAF5 /* libPods-KiwiUnitTest.a in Frameworks */,
+				759B33F5176518F600A6281E /* SenTestingKit.framework in Frameworks */,
+				759B33F6176518F600A6281E /* UIKit.framework in Frameworks */,
+				759B33F7176518F600A6281E /* Foundation.framework in Frameworks */,
+				81E8121720304974B90CE5DB /* libPods-Specs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,22 +204,22 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
-		75A7B900171B7E9F00866B5F /* KiwiUnitTest */ = {
+		759B33F8176518F600A6281E /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				75A7B90F171BD5C800866B5F /* BulletSpec.m */,
-				75A7B919171E7D1B00866B5F /* ObjectHavenSpec.m */,
-				75A7B901171B7E9F00866B5F /* Supporting Files */,
+				759B33FE176518F600A6281E /* Specs.h */,
+				759B33FF176518F600A6281E /* Specs.m */,
+				759B33F9176518F600A6281E /* Supporting Files */,
 			);
-			path = KiwiUnitTest;
+			path = Specs;
 			sourceTree = "<group>";
 		};
-		75A7B901171B7E9F00866B5F /* Supporting Files */ = {
+		759B33F9176518F600A6281E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				75A7B902171B7E9F00866B5F /* KiwiUnitTest-Info.plist */,
-				75A7B903171B7E9F00866B5F /* InfoPlist.strings */,
-				75A7B909171B7E9F00866B5F /* KiwiUnitTest-Prefix.pch */,
+				759B33FA176518F600A6281E /* Specs-Info.plist */,
+				759B33FB176518F600A6281E /* InfoPlist.strings */,
+				759B3401176518F600A6281E /* Specs-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -228,12 +228,12 @@
 			isa = PBXGroup;
 			children = (
 				75E3D68416DEADA9004959CC /* ShootTheMonsters */,
-				75A7B900171B7E9F00866B5F /* KiwiUnitTest */,
+				759B33F8176518F600A6281E /* Specs */,
 				75E3D67116DEADA9004959CC /* Frameworks */,
 				75E3D67016DEADA9004959CC /* Products */,
 				75066A31170BA215009A320A /* README.md */,
 				C3A7B81FBB674AAF911981B6 /* Pods.xcconfig */,
-				13FFBE8754EC48A584692278 /* Pods-KiwiUnitTest.xcconfig */,
+				7590C8E1F08C40DBB8B46F81 /* Pods-Specs.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -241,7 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				75E3D66F16DEADA9004959CC /* ShootTheMonsters.app */,
-				75A7B8FB171B7E9F00866B5F /* KiwiUnitTest.octest */,
+				759B33F4176518F600A6281E /* Specs.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -261,6 +261,7 @@
 				CBB17DBD631143C1B12F2040 /* libPods.a */,
 				75A7B8FC171B7E9F00866B5F /* SenTestingKit.framework */,
 				472BCCCB749145D2A6666FE7 /* libPods-KiwiUnitTest.a */,
+				23B346E96BC44F3C8ADBF7D5 /* libPods-Specs.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -336,24 +337,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		75A7B8FA171B7E9E00866B5F /* KiwiUnitTest */ = {
+		759B33F3176518F600A6281E /* Specs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75A7B90C171B7E9F00866B5F /* Build configuration list for PBXNativeTarget "KiwiUnitTest" */;
+			buildConfigurationList = 759B3402176518F600A6281E /* Build configuration list for PBXNativeTarget "Specs" */;
 			buildPhases = (
-				138565496AA8494A9F3B3579 /* Check Pods Manifest.lock */,
-				75A7B8F6171B7E9E00866B5F /* Sources */,
-				75A7B8F7171B7E9E00866B5F /* Frameworks */,
-				75A7B8F8171B7E9E00866B5F /* Resources */,
-				75A7B8F9171B7E9E00866B5F /* ShellScript */,
-				71070064D8AB48229AB027C9 /* Copy Pods Resources */,
+				127ED4BB3DE34A289D7E39E4 /* Check Pods Manifest.lock */,
+				759B33EF176518F600A6281E /* Sources */,
+				759B33F0176518F600A6281E /* Frameworks */,
+				759B33F1176518F600A6281E /* Resources */,
+				759B33F2176518F600A6281E /* ShellScript */,
+				DD206A73804D41958F7D599F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = KiwiUnitTest;
-			productName = KiwiUnitTest;
-			productReference = 75A7B8FB171B7E9F00866B5F /* KiwiUnitTest.octest */;
+			name = Specs;
+			productName = Specs;
+			productReference = 759B33F4176518F600A6281E /* Specs.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 		75E3D66E16DEADA9004959CC /* ShootTheMonsters */ = {
@@ -397,17 +398,17 @@
 			projectRoot = "";
 			targets = (
 				75E3D66E16DEADA9004959CC /* ShootTheMonsters */,
-				75A7B8FA171B7E9E00866B5F /* KiwiUnitTest */,
+				759B33F3176518F600A6281E /* Specs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		75A7B8F8171B7E9E00866B5F /* Resources */ = {
+		759B33F1176518F600A6281E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75A7B905171B7E9F00866B5F /* InfoPlist.strings in Resources */,
+				759B33FD176518F600A6281E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +441,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		138565496AA8494A9F3B3579 /* Check Pods Manifest.lock */ = {
+		127ED4BB3DE34A289D7E39E4 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -452,7 +453,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 		};
 		4C8B30EC27F84110B8B8DC23 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -468,21 +469,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
-		71070064D8AB48229AB027C9 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-KiwiUnitTest-resources.sh\"\n";
-		};
-		75A7B8F9171B7E9E00866B5F /* ShellScript */ = {
+		759B33F2176518F600A6281E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -509,15 +496,28 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
 		};
+		DD206A73804D41958F7D599F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Specs-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		75A7B8F6171B7E9E00866B5F /* Sources */ = {
+		759B33EF176518F600A6281E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75A7B910171BD5C800866B5F /* BulletSpec.m in Sources */,
-				75A7B91A171E7D1B00866B5F /* ObjectHavenSpec.m in Sources */,
+				759B3400176518F600A6281E /* Specs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,10 +542,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		75A7B903171B7E9F00866B5F /* InfoPlist.strings */ = {
+		759B33FB176518F600A6281E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				75A7B904171B7E9F00866B5F /* en */,
+				759B33FC176518F600A6281E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -553,9 +553,9 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		75A7B90A171B7E9F00866B5F /* Debug */ = {
+		759B3403176518F600A6281E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13FFBE8754EC48A584692278 /* Pods-KiwiUnitTest.xcconfig */;
+			baseConfigurationReference = 7590C8E1F08C40DBB8B46F81 /* Pods-Specs.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -573,24 +573,23 @@
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KiwiUnitTest/KiwiUnitTest-Prefix.pch";
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				INFOPLIST_FILE = "KiwiUnitTest/KiwiUnitTest-Info.plist";
+				INFOPLIST_FILE = "Specs/Specs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\"/**";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
-		75A7B90B171B7E9F00866B5F /* Release */ = {
+		759B3404176518F600A6281E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13FFBE8754EC48A584692278 /* Pods-KiwiUnitTest.xcconfig */;
+			baseConfigurationReference = 7590C8E1F08C40DBB8B46F81 /* Pods-Specs.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -607,12 +606,11 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KiwiUnitTest/KiwiUnitTest-Prefix.pch";
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				INFOPLIST_FILE = "KiwiUnitTest/KiwiUnitTest-Info.plist";
+				INFOPLIST_FILE = "Specs/Specs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\"/**";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = octest;
 			};
@@ -705,11 +703,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		75A7B90C171B7E9F00866B5F /* Build configuration list for PBXNativeTarget "KiwiUnitTest" */ = {
+		759B3402176518F600A6281E /* Build configuration list for PBXNativeTarget "Specs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75A7B90A171B7E9F00866B5F /* Debug */,
-				75A7B90B171B7E9F00866B5F /* Release */,
+				759B3403176518F600A6281E /* Debug */,
+				759B3404176518F600A6281E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

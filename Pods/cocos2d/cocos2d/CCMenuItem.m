@@ -47,6 +47,7 @@ const NSInteger	kCCZoomActionTag = 0xc0c05002;
 
 @synthesize isSelected=_isSelected;
 @synthesize releaseBlockAtCleanup=_releaseBlockAtCleanup;
+@synthesize activeArea=_activeArea;
 
 +(id) itemWithTarget:(id) r selector:(SEL) s
 {
@@ -93,6 +94,14 @@ const NSInteger	kCCZoomActionTag = 0xc0c05002;
 	return self;
 }
 
+-(void) setContentSize:(CGSize)contentSize {
+    [super setContentSize:contentSize];
+    
+    // Reset touch area to match the outside box
+    _activeArea = CGRectMake(0, 0, contentSize.width, contentSize.height);
+}
+
+
 -(void) dealloc
 {
 	[_block release];
@@ -136,13 +145,6 @@ const NSInteger	kCCZoomActionTag = 0xc0c05002;
     return _isEnabled;
 }
 
--(CGRect) rect
-{
-	return CGRectMake( _position.x - _contentSize.width*_anchorPoint.x,
-					  _position.y - _contentSize.height*_anchorPoint.y,
-					  _contentSize.width, _contentSize.height);
-}
-
 -(void) setBlock:(void(^)(id sender))block
 {
     [_block release];
@@ -151,9 +153,9 @@ const NSInteger	kCCZoomActionTag = 0xc0c05002;
 
 -(void) setTarget:(id)target selector:(SEL)selector
 {
-    [self setBlock:^(id sender) {
-        
-		[target performSelector:selector withObject:sender];
+   __block id weakTarget = target; // avoid retain cycle
+   [self setBlock:^(id sender) {
+		[weakTarget performSelector:selector withObject:sender];
 	}];
 }
 
@@ -205,8 +207,8 @@ const NSInteger	kCCZoomActionTag = 0xc0c05002;
 		self.disabledColor = ccc3( 126,126,126);
 		self.label = label;
 		
-		self.cascadeColor = YES;
-		self.cascadeOpacity = YES;
+		self.cascadeColorEnabled = YES;
+		self.cascadeOpacityEnabled = YES;
 	}
 
 	return self;
@@ -506,8 +508,8 @@ const NSInteger	kCCZoomActionTag = 0xc0c05002;
 
 		[self setContentSize: [_normalImage contentSize]];
 		
-		self.cascadeColor = YES;
-		self.cascadeOpacity = YES;
+		self.cascadeColorEnabled = YES;
+		self.cascadeOpacityEnabled = YES;
 	}
 	return self;
 }
@@ -765,8 +767,8 @@ const NSInteger	kCCZoomActionTag = 0xc0c05002;
 		_selectedIndex = NSUIntegerMax;
 		[self setSelectedIndex:0];
 		
-		self.cascadeColor = YES;
-		self.cascadeOpacity = YES;
+		self.cascadeColorEnabled = YES;
+		self.cascadeOpacityEnabled = YES;
 	}
 
 	return self;
