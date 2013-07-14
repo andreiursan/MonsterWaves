@@ -70,7 +70,7 @@
 		75E49E3E1792B15700F80375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E49E1E1792B15700F80375 /* UIKit.framework */; };
 		75E49E3F1792B15700F80375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E49E201792B15700F80375 /* Foundation.framework */; };
 		75E49E471792B15700F80375 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75E49E451792B15700F80375 /* InfoPlist.strings */; };
-		75E49E4A1792B15700F80375 /* MonsterWavesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E49E491792B15700F80375 /* MonsterWavesTests.m */; };
+		75E49E4A1792B15700F80375 /* EnemySpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E49E491792B15700F80375 /* EnemySpecs.m */; };
 		98C4C8D89DEA48F2807B53C1 /* libPods-MonsterWaves.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AAA46348604C5C85B6F4B6 /* libPods-MonsterWaves.a */; };
 		B7130E59FB634F1389D882EA /* libPods-MonsterWavesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2485BDF39147B6948AEC43 /* libPods-MonsterWavesTests.a */; };
 /* End PBXBuildFile section */
@@ -138,7 +138,7 @@
 		75E49E3C1792B15700F80375 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		75E49E441792B15700F80375 /* MonsterWavesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MonsterWavesTests-Info.plist"; sourceTree = "<group>"; };
 		75E49E461792B15700F80375 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		75E49E491792B15700F80375 /* MonsterWavesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonsterWavesTests.m; sourceTree = "<group>"; };
+		75E49E491792B15700F80375 /* EnemySpecs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnemySpecs.m; sourceTree = "<group>"; };
 		9F2485BDF39147B6948AEC43 /* libPods-MonsterWavesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MonsterWavesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AAA46348604C5C85B6F4B6 /* libPods-MonsterWaves.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MonsterWaves.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -320,7 +320,7 @@
 		75E49E421792B15700F80375 /* MonsterWavesTests */ = {
 			isa = PBXGroup;
 			children = (
-				75E49E491792B15700F80375 /* MonsterWavesTests.m */,
+				75E49E491792B15700F80375 /* EnemySpecs.m */,
 				75E49E431792B15700F80375 /* Supporting Files */,
 			);
 			path = MonsterWavesTests;
@@ -558,7 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75E49E4A1792B15700F80375 /* MonsterWavesTests.m in Sources */,
+				75E49E4A1792B15700F80375 /* EnemySpecs.m in Sources */,
 				7567B85E1792BCBC00CCD74D /* Bullet.m in Sources */,
 				7567B8601792BCBC00CCD74D /* GameObject+Movement.m in Sources */,
 				7567B8621792BCBC00CCD74D /* Enemy.m in Sources */,
