@@ -1,0 +1,5 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$(SDKROOT)/Developer/Library/Frameworks" "$(DEVELOPER_LIBRARY_DIR)/Frameworks"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/CocosDenshion" "${PODS_ROOT}/Headers/Expecta" "${PODS_ROOT}/Headers/OCMock" "${PODS_ROOT}/Headers/Specta" "${PODS_ROOT}/Headers/cocos2d" "${PODS_ROOT}/Headers/cocos2d/Platforms" "${PODS_ROOT}/Headers/cocos2d/Platforms/Mac" "${PODS_ROOT}/Headers/cocos2d/Platforms/iOS" "${PODS_ROOT}/Headers/cocos2d/Support" "${PODS_ROOT}/Headers/external/kazmath/include/kazmath" "${PODS_ROOT}/Headers/external/kazmath/include/kazmath/GL" "${PODS_ROOT}/Headers/external/libpng"
+OTHER_LDFLAGS = -ObjC -framework Foundation -framework SenTestingKit
+PODS_ROOT = ${SRCROOT}/Pods

@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7567B85D1792BCBC00CCD74D /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B84A1792BCBC00CCD74D /* Bullet.m */; };
+		7567B85E1792BCBC00CCD74D /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B84A1792BCBC00CCD74D /* Bullet.m */; };
+		7567B85F1792BCBC00CCD74D /* GameObject+Movement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B84D1792BCBC00CCD74D /* GameObject+Movement.m */; };
+		7567B8601792BCBC00CCD74D /* GameObject+Movement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B84D1792BCBC00CCD74D /* GameObject+Movement.m */; };
+		7567B8611792BCBC00CCD74D /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B84F1792BCBC00CCD74D /* Enemy.m */; };
+		7567B8621792BCBC00CCD74D /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B84F1792BCBC00CCD74D /* Enemy.m */; };
+		7567B8631792BCBC00CCD74D /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B8511792BCBC00CCD74D /* GameObject.m */; };
+		7567B8641792BCBC00CCD74D /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B8511792BCBC00CCD74D /* GameObject.m */; };
+		7567B8651792BCBC00CCD74D /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B8531792BCBC00CCD74D /* Player.m */; };
+		7567B8661792BCBC00CCD74D /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B8531792BCBC00CCD74D /* Player.m */; };
+		7567B8671792BCBC00CCD74D /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B8581792BCBC00CCD74D /* GameLayer.m */; };
+		7567B8681792BCBC00CCD74D /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B8581792BCBC00CCD74D /* GameLayer.m */; };
+		7567B8691792BCBC00CCD74D /* GameOverLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B85A1792BCBC00CCD74D /* GameOverLayer.m */; };
+		7567B86A1792BCBC00CCD74D /* GameOverLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B85A1792BCBC00CCD74D /* GameOverLayer.m */; };
+		7567B86B1792BCBC00CCD74D /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B85C1792BCBC00CCD74D /* IntroLayer.m */; };
+		7567B86C1792BCBC00CCD74D /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B85C1792BCBC00CCD74D /* IntroLayer.m */; };
+		7567BA321792BE3A00CCD74D /* monster-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA291792BE3A00CCD74D /* monster-hd.png */; };
+		7567BA331792BE3A00CCD74D /* monster-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA291792BE3A00CCD74D /* monster-hd.png */; };
+		7567BA341792BE3A00CCD74D /* monster.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA2A1792BE3A00CCD74D /* monster.png */; };
+		7567BA351792BE3A00CCD74D /* monster.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA2A1792BE3A00CCD74D /* monster.png */; };
+		7567BA361792BE3A00CCD74D /* player-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA2B1792BE3A00CCD74D /* player-hd.png */; };
+		7567BA371792BE3A00CCD74D /* player-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA2B1792BE3A00CCD74D /* player-hd.png */; };
+		7567BA381792BE3A00CCD74D /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA2C1792BE3A00CCD74D /* player.png */; };
+		7567BA391792BE3A00CCD74D /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA2C1792BE3A00CCD74D /* player.png */; };
+		7567BA3A1792BE3A00CCD74D /* projectile-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA2D1792BE3A00CCD74D /* projectile-hd.png */; };
+		7567BA3B1792BE3A00CCD74D /* projectile-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA2D1792BE3A00CCD74D /* projectile-hd.png */; };
+		7567BA3C1792BE3A00CCD74D /* projectile.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA2E1792BE3A00CCD74D /* projectile.png */; };
+		7567BA3D1792BE3A00CCD74D /* projectile.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA2E1792BE3A00CCD74D /* projectile.png */; };
+		7567BA3E1792BE3A00CCD74D /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA301792BE3A00CCD74D /* background-music-aac.caf */; };
+		7567BA3F1792BE3A00CCD74D /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA301792BE3A00CCD74D /* background-music-aac.caf */; };
+		7567BA401792BE3A00CCD74D /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA311792BE3A00CCD74D /* pew-pew-lei.caf */; };
+		7567BA411792BE3A00CCD74D /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA311792BE3A00CCD74D /* pew-pew-lei.caf */; };
+		7567BA4C1792BEB100CCD74D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA421792BEB100CCD74D /* Default-568h@2x.png */; };
+		7567BA4D1792BEB100CCD74D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA421792BEB100CCD74D /* Default-568h@2x.png */; };
+		7567BA4E1792BEB100CCD74D /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA431792BEB100CCD74D /* Default-Landscape~ipad.png */; };
+		7567BA4F1792BEB100CCD74D /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA431792BEB100CCD74D /* Default-Landscape~ipad.png */; };
+		7567BA501792BEB100CCD74D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA441792BEB100CCD74D /* Default.png */; };
+		7567BA511792BEB100CCD74D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA441792BEB100CCD74D /* Default.png */; };
+		7567BA521792BEB100CCD74D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA451792BEB100CCD74D /* Default@2x.png */; };
+		7567BA531792BEB100CCD74D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA451792BEB100CCD74D /* Default@2x.png */; };
+		7567BA541792BEB100CCD74D /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA461792BEB100CCD74D /* Icon-72.png */; };
+		7567BA551792BEB100CCD74D /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA461792BEB100CCD74D /* Icon-72.png */; };
+		7567BA561792BEB100CCD74D /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA471792BEB100CCD74D /* Icon-Small-50.png */; };
+		7567BA571792BEB100CCD74D /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA471792BEB100CCD74D /* Icon-Small-50.png */; };
+		7567BA581792BEB100CCD74D /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA481792BEB100CCD74D /* Icon-Small.png */; };
+		7567BA591792BEB100CCD74D /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA481792BEB100CCD74D /* Icon-Small.png */; };
+		7567BA5A1792BEB100CCD74D /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA491792BEB100CCD74D /* Icon-Small@2x.png */; };
+		7567BA5B1792BEB100CCD74D /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA491792BEB100CCD74D /* Icon-Small@2x.png */; };
+		7567BA5C1792BEB100CCD74D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA4A1792BEB100CCD74D /* Icon.png */; };
+		7567BA5D1792BEB100CCD74D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA4A1792BEB100CCD74D /* Icon.png */; };
+		7567BA5E1792BEB100CCD74D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA4B1792BEB100CCD74D /* Icon@2x.png */; };
+		7567BA5F1792BEB100CCD74D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA4B1792BEB100CCD74D /* Icon@2x.png */; };
+		75E49E1F1792B15700F80375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E49E1E1792B15700F80375 /* UIKit.framework */; };
+		75E49E211792B15700F80375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E49E201792B15700F80375 /* Foundation.framework */; };
+		75E49E231792B15700F80375 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E49E221792B15700F80375 /* CoreGraphics.framework */; };
+		75E49E291792B15700F80375 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75E49E271792B15700F80375 /* InfoPlist.strings */; };
+		75E49E2B1792B15700F80375 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E49E2A1792B15700F80375 /* main.m */; };
+		75E49E2F1792B15700F80375 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E49E2E1792B15700F80375 /* AppDelegate.m */; };
+		75E49E3D1792B15700F80375 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E49E3C1792B15700F80375 /* SenTestingKit.framework */; };
+		75E49E3E1792B15700F80375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E49E1E1792B15700F80375 /* UIKit.framework */; };
+		75E49E3F1792B15700F80375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E49E201792B15700F80375 /* Foundation.framework */; };
+		75E49E471792B15700F80375 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75E49E451792B15700F80375 /* InfoPlist.strings */; };
+		75E49E4A1792B15700F80375 /* MonsterWavesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E49E491792B15700F80375 /* MonsterWavesTests.m */; };
+		98C4C8D89DEA48F2807B53C1 /* libPods-MonsterWaves.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AAA46348604C5C85B6F4B6 /* libPods-MonsterWaves.a */; };
+		B7130E59FB634F1389D882EA /* libPods-MonsterWavesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2485BDF39147B6948AEC43 /* libPods-MonsterWavesTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75E49E401792B15700F80375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75E49E131792B15600F80375 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75E49E1A1792B15600F80375;
+			remoteInfo = MonsterWaves;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05FB8B698ABD4EC38D6E5DBD /* Pods-MonsterWavesTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonsterWavesTests.xcconfig"; path = "Pods/Pods-MonsterWavesTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		611DAEE1492C4A029B20AAA9 /* Pods-MonsterWaves.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonsterWaves.xcconfig"; path = "Pods/Pods-MonsterWaves.xcconfig"; sourceTree = SOURCE_ROOT; };
+		7567B8471792BCA500CCD74D /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
+		7567B8491792BCBC00CCD74D /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
+		7567B84A1792BCBC00CCD74D /* Bullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bullet.m; sourceTree = "<group>"; };
+		7567B84C1792BCBC00CCD74D /* GameObject+Movement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GameObject+Movement.h"; sourceTree = "<group>"; };
+		7567B84D1792BCBC00CCD74D /* GameObject+Movement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GameObject+Movement.m"; sourceTree = "<group>"; };
+		7567B84E1792BCBC00CCD74D /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
+		7567B84F1792BCBC00CCD74D /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
+		7567B8501792BCBC00CCD74D /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		7567B8511792BCBC00CCD74D /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject.m; sourceTree = "<group>"; };
+		7567B8521792BCBC00CCD74D /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		7567B8531792BCBC00CCD74D /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		7567B8551792BCBC00CCD74D /* Movable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movable.h; sourceTree = "<group>"; };
+		7567B8571792BCBC00CCD74D /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
+		7567B8581792BCBC00CCD74D /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
+		7567B8591792BCBC00CCD74D /* GameOverLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverLayer.h; sourceTree = "<group>"; };
+		7567B85A1792BCBC00CCD74D /* GameOverLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverLayer.m; sourceTree = "<group>"; };
+		7567B85B1792BCBC00CCD74D /* IntroLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
+		7567B85C1792BCBC00CCD74D /* IntroLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		7567BA291792BE3A00CCD74D /* monster-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monster-hd.png"; sourceTree = "<group>"; };
+		7567BA2A1792BE3A00CCD74D /* monster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster.png; sourceTree = "<group>"; };
+		7567BA2B1792BE3A00CCD74D /* player-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player-hd.png"; sourceTree = "<group>"; };
+		7567BA2C1792BE3A00CCD74D /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		7567BA2D1792BE3A00CCD74D /* projectile-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "projectile-hd.png"; sourceTree = "<group>"; };
+		7567BA2E1792BE3A00CCD74D /* projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = projectile.png; sourceTree = "<group>"; };
+		7567BA301792BE3A00CCD74D /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
+		7567BA311792BE3A00CCD74D /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		7567BA421792BEB100CCD74D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7567BA431792BEB100CCD74D /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		7567BA441792BEB100CCD74D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7567BA451792BEB100CCD74D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7567BA461792BEB100CCD74D /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		7567BA471792BEB100CCD74D /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		7567BA481792BEB100CCD74D /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		7567BA491792BEB100CCD74D /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		7567BA4A1792BEB100CCD74D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		7567BA4B1792BEB100CCD74D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		75E49E1B1792B15700F80375 /* MonsterWaves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonsterWaves.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75E49E1E1792B15700F80375 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		75E49E201792B15700F80375 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		75E49E221792B15700F80375 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		75E49E261792B15700F80375 /* MonsterWaves-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MonsterWaves-Info.plist"; path = "../MonsterWaves-Info.plist"; sourceTree = "<group>"; };
+		75E49E281792B15700F80375 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75E49E2A1792B15700F80375 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75E49E2C1792B15700F80375 /* MonsterWaves-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MonsterWaves-Prefix.pch"; sourceTree = "<group>"; };
+		75E49E2D1792B15700F80375 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		75E49E2E1792B15700F80375 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		75E49E3B1792B15700F80375 /* MonsterWavesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonsterWavesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75E49E3C1792B15700F80375 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		75E49E441792B15700F80375 /* MonsterWavesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MonsterWavesTests-Info.plist"; sourceTree = "<group>"; };
+		75E49E461792B15700F80375 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75E49E491792B15700F80375 /* MonsterWavesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonsterWavesTests.m; sourceTree = "<group>"; };
+		9F2485BDF39147B6948AEC43 /* libPods-MonsterWavesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MonsterWavesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0AAA46348604C5C85B6F4B6 /* libPods-MonsterWaves.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MonsterWaves.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75E49E181792B15600F80375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E49E1F1792B15700F80375 /* UIKit.framework in Frameworks */,
+				75E49E211792B15700F80375 /* Foundation.framework in Frameworks */,
+				75E49E231792B15700F80375 /* CoreGraphics.framework in Frameworks */,
+				98C4C8D89DEA48F2807B53C1 /* libPods-MonsterWaves.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75E49E371792B15700F80375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E49E3D1792B15700F80375 /* SenTestingKit.framework in Frameworks */,
+				75E49E3E1792B15700F80375 /* UIKit.framework in Frameworks */,
+				75E49E3F1792B15700F80375 /* Foundation.framework in Frameworks */,
+				B7130E59FB634F1389D882EA /* libPods-MonsterWavesTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7567B8481792BCBC00CCD74D /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				7567B8491792BCBC00CCD74D /* Bullet.h */,
+				7567B84A1792BCBC00CCD74D /* Bullet.m */,
+				7567B84B1792BCBC00CCD74D /* Categories */,
+				7567B84E1792BCBC00CCD74D /* Enemy.h */,
+				7567B84F1792BCBC00CCD74D /* Enemy.m */,
+				7567B8501792BCBC00CCD74D /* GameObject.h */,
+				7567B8511792BCBC00CCD74D /* GameObject.m */,
+				7567B8521792BCBC00CCD74D /* Player.h */,
+				7567B8531792BCBC00CCD74D /* Player.m */,
+				7567B8541792BCBC00CCD74D /* Protocols */,
+			);
+			path = GameObjects;
+			sourceTree = "<group>";
+		};
+		7567B84B1792BCBC00CCD74D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				7567B84C1792BCBC00CCD74D /* GameObject+Movement.h */,
+				7567B84D1792BCBC00CCD74D /* GameObject+Movement.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		7567B8541792BCBC00CCD74D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7567B8551792BCBC00CCD74D /* Movable.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7567B8561792BCBC00CCD74D /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				7567B8571792BCBC00CCD74D /* GameLayer.h */,
+				7567B8581792BCBC00CCD74D /* GameLayer.m */,
+				7567B8591792BCBC00CCD74D /* GameOverLayer.h */,
+				7567B85A1792BCBC00CCD74D /* GameOverLayer.m */,
+				7567B85B1792BCBC00CCD74D /* IntroLayer.h */,
+				7567B85C1792BCBC00CCD74D /* IntroLayer.m */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		7567BA271792BE3A00CCD74D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				75E49E261792B15700F80375 /* MonsterWaves-Info.plist */,
+				75E49E271792B15700F80375 /* InfoPlist.strings */,
+				7567BA421792BEB100CCD74D /* Default-568h@2x.png */,
+				7567BA431792BEB100CCD74D /* Default-Landscape~ipad.png */,
+				7567BA441792BEB100CCD74D /* Default.png */,
+				7567BA451792BEB100CCD74D /* Default@2x.png */,
+				7567BA461792BEB100CCD74D /* Icon-72.png */,
+				7567BA471792BEB100CCD74D /* Icon-Small-50.png */,
+				7567BA481792BEB100CCD74D /* Icon-Small.png */,
+				7567BA491792BEB100CCD74D /* Icon-Small@2x.png */,
+				7567BA4A1792BEB100CCD74D /* Icon.png */,
+				7567BA4B1792BEB100CCD74D /* Icon@2x.png */,
+				7567BA281792BE3A00CCD74D /* Art */,
+				7567BA2F1792BE3A00CCD74D /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7567BA281792BE3A00CCD74D /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				7567BA291792BE3A00CCD74D /* monster-hd.png */,
+				7567BA2A1792BE3A00CCD74D /* monster.png */,
+				7567BA2B1792BE3A00CCD74D /* player-hd.png */,
+				7567BA2C1792BE3A00CCD74D /* player.png */,
+				7567BA2D1792BE3A00CCD74D /* projectile-hd.png */,
+				7567BA2E1792BE3A00CCD74D /* projectile.png */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		7567BA2F1792BE3A00CCD74D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				7567BA301792BE3A00CCD74D /* background-music-aac.caf */,
+				7567BA311792BE3A00CCD74D /* pew-pew-lei.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		75E49E121792B15600F80375 = {
+			isa = PBXGroup;
+			children = (
+				75E49E241792B15700F80375 /* MonsterWaves */,
+				75E49E421792B15700F80375 /* MonsterWavesTests */,
+				75E49E1D1792B15700F80375 /* Frameworks */,
+				75E49E1C1792B15700F80375 /* Products */,
+				611DAEE1492C4A029B20AAA9 /* Pods-MonsterWaves.xcconfig */,
+				05FB8B698ABD4EC38D6E5DBD /* Pods-MonsterWavesTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		75E49E1C1792B15700F80375 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75E49E1B1792B15700F80375 /* MonsterWaves.app */,
+				75E49E3B1792B15700F80375 /* MonsterWavesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75E49E1D1792B15700F80375 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75E49E1E1792B15700F80375 /* UIKit.framework */,
+				75E49E201792B15700F80375 /* Foundation.framework */,
+				75E49E221792B15700F80375 /* CoreGraphics.framework */,
+				75E49E3C1792B15700F80375 /* SenTestingKit.framework */,
+				F0AAA46348604C5C85B6F4B6 /* libPods-MonsterWaves.a */,
+				9F2485BDF39147B6948AEC43 /* libPods-MonsterWavesTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75E49E241792B15700F80375 /* MonsterWaves */ = {
+			isa = PBXGroup;
+			children = (
+				7567B8481792BCBC00CCD74D /* GameObjects */,
+				7567B8561792BCBC00CCD74D /* Layers */,
+				75E49E2D1792B15700F80375 /* AppDelegate.h */,
+				75E49E2E1792B15700F80375 /* AppDelegate.m */,
+				7567B8471792BCA500CCD74D /* GameConfig.h */,
+				75E49E251792B15700F80375 /* Supporting Files */,
+				7567BA271792BE3A00CCD74D /* Resources */,
+			);
+			path = MonsterWaves;
+			sourceTree = "<group>";
+		};
+		75E49E251792B15700F80375 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75E49E2A1792B15700F80375 /* main.m */,
+				75E49E2C1792B15700F80375 /* MonsterWaves-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75E49E421792B15700F80375 /* MonsterWavesTests */ = {
+			isa = PBXGroup;
+			children = (
+				75E49E491792B15700F80375 /* MonsterWavesTests.m */,
+				75E49E431792B15700F80375 /* Supporting Files */,
+			);
+			path = MonsterWavesTests;
+			sourceTree = "<group>";
+		};
+		75E49E431792B15700F80375 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75E49E441792B15700F80375 /* MonsterWavesTests-Info.plist */,
+				75E49E451792B15700F80375 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75E49E1A1792B15600F80375 /* MonsterWaves */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75E49E4D1792B15700F80375 /* Build configuration list for PBXNativeTarget "MonsterWaves" */;
+			buildPhases = (
+				FB883F0B60DC457494AEF399 /* Check Pods Manifest.lock */,
+				75E49E171792B15600F80375 /* Sources */,
+				75E49E181792B15600F80375 /* Frameworks */,
+				75E49E191792B15600F80375 /* Resources */,
+				34DCA3BFF7B44B4A9E52D3E2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonsterWaves;
+			productName = MonsterWaves;
+			productReference = 75E49E1B1792B15700F80375 /* MonsterWaves.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75E49E3A1792B15700F80375 /* MonsterWavesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75E49E501792B15700F80375 /* Build configuration list for PBXNativeTarget "MonsterWavesTests" */;
+			buildPhases = (
+				CD92ACB1AECE4C23AD4AAFCB /* Check Pods Manifest.lock */,
+				75E49E361792B15700F80375 /* Sources */,
+				75E49E371792B15700F80375 /* Frameworks */,
+				75E49E381792B15700F80375 /* Resources */,
+				75E49E391792B15700F80375 /* ShellScript */,
+				68F7D2F9FF5E4C569D65EA37 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75E49E411792B15700F80375 /* PBXTargetDependency */,
+			);
+			name = MonsterWavesTests;
+			productName = MonsterWavesTests;
+			productReference = 75E49E3B1792B15700F80375 /* MonsterWavesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75E49E131792B15600F80375 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Andrei Ursan";
+			};
+			buildConfigurationList = 75E49E161792B15600F80375 /* Build configuration list for PBXProject "MonsterWaves" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 75E49E121792B15600F80375;
+			productRefGroup = 75E49E1C1792B15700F80375 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75E49E1A1792B15600F80375 /* MonsterWaves */,
+				75E49E3A1792B15700F80375 /* MonsterWavesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75E49E191792B15600F80375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E49E291792B15700F80375 /* InfoPlist.strings in Resources */,
+				7567BA321792BE3A00CCD74D /* monster-hd.png in Resources */,
+				7567BA341792BE3A00CCD74D /* monster.png in Resources */,
+				7567BA361792BE3A00CCD74D /* player-hd.png in Resources */,
+				7567BA381792BE3A00CCD74D /* player.png in Resources */,
+				7567BA3A1792BE3A00CCD74D /* projectile-hd.png in Resources */,
+				7567BA3C1792BE3A00CCD74D /* projectile.png in Resources */,
+				7567BA3E1792BE3A00CCD74D /* background-music-aac.caf in Resources */,
+				7567BA401792BE3A00CCD74D /* pew-pew-lei.caf in Resources */,
+				7567BA4C1792BEB100CCD74D /* Default-568h@2x.png in Resources */,
+				7567BA4E1792BEB100CCD74D /* Default-Landscape~ipad.png in Resources */,
+				7567BA501792BEB100CCD74D /* Default.png in Resources */,
+				7567BA521792BEB100CCD74D /* Default@2x.png in Resources */,
+				7567BA541792BEB100CCD74D /* Icon-72.png in Resources */,
+				7567BA561792BEB100CCD74D /* Icon-Small-50.png in Resources */,
+				7567BA581792BEB100CCD74D /* Icon-Small.png in Resources */,
+				7567BA5A1792BEB100CCD74D /* Icon-Small@2x.png in Resources */,
+				7567BA5C1792BEB100CCD74D /* Icon.png in Resources */,
+				7567BA5E1792BEB100CCD74D /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75E49E381792B15700F80375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E49E471792B15700F80375 /* InfoPlist.strings in Resources */,
+				7567BA331792BE3A00CCD74D /* monster-hd.png in Resources */,
+				7567BA351792BE3A00CCD74D /* monster.png in Resources */,
+				7567BA371792BE3A00CCD74D /* player-hd.png in Resources */,
+				7567BA391792BE3A00CCD74D /* player.png in Resources */,
+				7567BA3B1792BE3A00CCD74D /* projectile-hd.png in Resources */,
+				7567BA3D1792BE3A00CCD74D /* projectile.png in Resources */,
+				7567BA3F1792BE3A00CCD74D /* background-music-aac.caf in Resources */,
+				7567BA411792BE3A00CCD74D /* pew-pew-lei.caf in Resources */,
+				7567BA4D1792BEB100CCD74D /* Default-568h@2x.png in Resources */,
+				7567BA4F1792BEB100CCD74D /* Default-Landscape~ipad.png in Resources */,
+				7567BA511792BEB100CCD74D /* Default.png in Resources */,
+				7567BA531792BEB100CCD74D /* Default@2x.png in Resources */,
+				7567BA551792BEB100CCD74D /* Icon-72.png in Resources */,
+				7567BA571792BEB100CCD74D /* Icon-Small-50.png in Resources */,
+				7567BA591792BEB100CCD74D /* Icon-Small.png in Resources */,
+				7567BA5B1792BEB100CCD74D /* Icon-Small@2x.png in Resources */,
+				7567BA5D1792BEB100CCD74D /* Icon.png in Resources */,
+				7567BA5F1792BEB100CCD74D /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34DCA3BFF7B44B4A9E52D3E2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-MonsterWaves-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68F7D2F9FF5E4C569D65EA37 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-MonsterWavesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75E49E391792B15700F80375 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		CD92ACB1AECE4C23AD4AAFCB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB883F0B60DC457494AEF399 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75E49E171792B15600F80375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E49E2B1792B15700F80375 /* main.m in Sources */,
+				75E49E2F1792B15700F80375 /* AppDelegate.m in Sources */,
+				7567B85D1792BCBC00CCD74D /* Bullet.m in Sources */,
+				7567B85F1792BCBC00CCD74D /* GameObject+Movement.m in Sources */,
+				7567B8611792BCBC00CCD74D /* Enemy.m in Sources */,
+				7567B8631792BCBC00CCD74D /* GameObject.m in Sources */,
+				7567B8651792BCBC00CCD74D /* Player.m in Sources */,
+				7567B8671792BCBC00CCD74D /* GameLayer.m in Sources */,
+				7567B8691792BCBC00CCD74D /* GameOverLayer.m in Sources */,
+				7567B86B1792BCBC00CCD74D /* IntroLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75E49E361792B15700F80375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E49E4A1792B15700F80375 /* MonsterWavesTests.m in Sources */,
+				7567B85E1792BCBC00CCD74D /* Bullet.m in Sources */,
+				7567B8601792BCBC00CCD74D /* GameObject+Movement.m in Sources */,
+				7567B8621792BCBC00CCD74D /* Enemy.m in Sources */,
+				7567B8641792BCBC00CCD74D /* GameObject.m in Sources */,
+				7567B8661792BCBC00CCD74D /* Player.m in Sources */,
+				7567B8681792BCBC00CCD74D /* GameLayer.m in Sources */,
+				7567B86A1792BCBC00CCD74D /* GameOverLayer.m in Sources */,
+				7567B86C1792BCBC00CCD74D /* IntroLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75E49E411792B15700F80375 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75E49E1A1792B15600F80375 /* MonsterWaves */;
+			targetProxy = 75E49E401792B15700F80375 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75E49E271792B15700F80375 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75E49E281792B15700F80375 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		75E49E451792B15700F80375 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75E49E461792B15700F80375 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75E49E4B1792B15700F80375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75E49E4C1792B15700F80375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75E49E4E1792B15700F80375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 611DAEE1492C4A029B20AAA9 /* Pods-MonsterWaves.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MonsterWaves/MonsterWaves-Prefix.pch";
+				INFOPLIST_FILE = "MonsterWaves/MonsterWaves-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		75E49E4F1792B15700F80375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 611DAEE1492C4A029B20AAA9 /* Pods-MonsterWaves.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MonsterWaves/MonsterWaves-Prefix.pch";
+				INFOPLIST_FILE = "MonsterWaves/MonsterWaves-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		75E49E511792B15700F80375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05FB8B698ABD4EC38D6E5DBD /* Pods-MonsterWavesTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MonsterWaves.app/MonsterWaves";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MonsterWaves/MonsterWaves-Prefix.pch";
+				INFOPLIST_FILE = "MonsterWavesTests/MonsterWavesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		75E49E521792B15700F80375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05FB8B698ABD4EC38D6E5DBD /* Pods-MonsterWavesTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MonsterWaves.app/MonsterWaves";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MonsterWaves/MonsterWaves-Prefix.pch";
+				INFOPLIST_FILE = "MonsterWavesTests/MonsterWavesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75E49E161792B15600F80375 /* Build configuration list for PBXProject "MonsterWaves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75E49E4B1792B15700F80375 /* Debug */,
+				75E49E4C1792B15700F80375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75E49E4D1792B15700F80375 /* Build configuration list for PBXNativeTarget "MonsterWaves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75E49E4E1792B15700F80375 /* Debug */,
+				75E49E4F1792B15700F80375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75E49E501792B15700F80375 /* Build configuration list for PBXNativeTarget "MonsterWavesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75E49E511792B15700F80375 /* Debug */,
+				75E49E521792B15700F80375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75E49E131792B15600F80375 /* Project object */;
+}
