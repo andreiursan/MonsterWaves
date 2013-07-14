@@ -18,7 +18,6 @@
 		759B33F7176518F600A6281E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67E16DEADA9004959CC /* Foundation.framework */; };
 		759B33FD176518F600A6281E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 759B33FB176518F600A6281E /* InfoPlist.strings */; };
 		759B3400176518F600A6281E /* Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = 759B33FF176518F600A6281E /* Specs.m */; };
-		75A7B918171E7CA900866B5F /* ObjectHaven.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A7B917171E7CA900866B5F /* ObjectHaven.m */; };
 		75E3D67316DEADA9004959CC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67216DEADA9004959CC /* QuartzCore.framework */; };
 		75E3D67516DEADA9004959CC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67416DEADA9004959CC /* OpenGLES.framework */; };
 		75E3D67716DEADA9004959CC /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E3D67616DEADA9004959CC /* OpenAL.framework */; };
@@ -81,8 +80,6 @@
 		759B33FF176518F600A6281E /* Specs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Specs.m; sourceTree = "<group>"; };
 		759B3401176518F600A6281E /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		75A7B8FC171B7E9F00866B5F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		75A7B916171E7CA900866B5F /* ObjectHaven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectHaven.h; sourceTree = "<group>"; };
-		75A7B917171E7CA900866B5F /* ObjectHaven.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectHaven.m; sourceTree = "<group>"; };
 		75E3D66F16DEADA9004959CC /* ShootTheMonsters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootTheMonsters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E3D67216DEADA9004959CC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		75E3D67416DEADA9004959CC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -271,8 +268,6 @@
 			children = (
 				75066A30170BA16A009A320A /* Layers */,
 				75066A2F170B96FB009A320A /* GameObjects */,
-				75A7B916171E7CA900866B5F /* ObjectHaven.h */,
-				75A7B917171E7CA900866B5F /* ObjectHaven.m */,
 				756E0CA316F216A600B73F88 /* GameConfig.h */,
 				75E3D81216DEADAC004959CC /* AppDelegate.h */,
 				75E3D81316DEADAC004959CC /* AppDelegate.m */,
@@ -535,7 +530,6 @@
 				75622F4917085E01006C82F0 /* Player.m in Sources */,
 				75622F4C1708F795006C82F0 /* GameObject.m in Sources */,
 				75622F52170B58AA006C82F0 /* GameObject+Movement.m in Sources */,
-				75A7B918171E7CA900866B5F /* ObjectHaven.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
