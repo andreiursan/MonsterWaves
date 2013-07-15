@@ -10,21 +10,10 @@
 #import "Expecta.h"
 #import "Enemy.h"
 
-SharedExamplesBegin(MySharedExamples)
 
-sharedExamplesFor(@"movable object", ^(NSDictionary *data) {
-  it(@"should do some stuff", ^{
-    id obj = [data objectForKey:@"movable"];
-    expect([obj respondsToSelector:@selector(updatePosition:)]).to.beTruthy();
-  });
-});
+SpecBegin(Enemy)
 
-SharedExamplesEnd
-
-
-SpecBegin(Thing)
-
-describe(@"Thing", ^{
+describe(@"Enemy", ^{
   
   __block Enemy *enemy;
   
@@ -32,7 +21,7 @@ describe(@"Thing", ^{
     enemy = [[Enemy alloc] init];
   });
   
-  itShouldBehaveLike(@"movable object", ^{
+  itShouldBehaveLike(@"a movable object", ^{
     return @{ @"movable" : enemy };
   });
 

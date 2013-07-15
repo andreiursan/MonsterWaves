@@ -60,6 +60,7 @@
 		7567BA5E1792BEB100CCD74D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA4B1792BEB100CCD74D /* Icon@2x.png */; };
 		7567BA5F1792BEB100CCD74D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7567BA4B1792BEB100CCD74D /* Icon@2x.png */; };
 		75C958CA17930ADA00592A37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E49E221792B15700F80375 /* CoreGraphics.framework */; };
+		75C958D31793DCC300592A37 /* MovableObjectSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C958D11793DCC300592A37 /* MovableObjectSpecs.m */; };
 		75E49E1F1792B15700F80375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E49E1E1792B15700F80375 /* UIKit.framework */; };
 		75E49E211792B15700F80375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E49E201792B15700F80375 /* Foundation.framework */; };
 		75E49E231792B15700F80375 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E49E221792B15700F80375 /* CoreGraphics.framework */; };
@@ -124,6 +125,7 @@
 		7567BA491792BEB100CCD74D /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		7567BA4A1792BEB100CCD74D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		7567BA4B1792BEB100CCD74D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		75C958D11793DCC300592A37 /* MovableObjectSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovableObjectSpecs.m; sourceTree = "<group>"; };
 		75E49E1B1792B15700F80375 /* MonsterWaves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonsterWaves.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E49E1E1792B15700F80375 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		75E49E201792B15700F80375 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -260,6 +262,14 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		75C958CF1793DC5D00592A37 /* SharedExamples */ = {
+			isa = PBXGroup;
+			children = (
+				75C958D11793DCC300592A37 /* MovableObjectSpecs.m */,
+			);
+			name = SharedExamples;
+			sourceTree = "<group>";
+		};
 		75E49E121792B15600F80375 = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +330,7 @@
 		75E49E421792B15700F80375 /* MonsterWavesTests */ = {
 			isa = PBXGroup;
 			children = (
+				75C958CF1793DC5D00592A37 /* SharedExamples */,
 				75E49E491792B15700F80375 /* EnemySpecs.m */,
 				75E49E431792B15700F80375 /* Supporting Files */,
 			);
@@ -567,6 +578,7 @@
 				7567B8681792BCBC00CCD74D /* GameLayer.m in Sources */,
 				7567B86A1792BCBC00CCD74D /* GameOverLayer.m in Sources */,
 				7567B86C1792BCBC00CCD74D /* IntroLayer.m in Sources */,
+				75C958D31793DCC300592A37 /* MovableObjectSpecs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
